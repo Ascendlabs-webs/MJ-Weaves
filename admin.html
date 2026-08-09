@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keerthi Fashions — Admin</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#FBF6EC; --ivory-deep:#F3EADA; --ink:#241A14;
+    --teal:#116A5C; --teal-deep:#0B4B41; --rose:#C21E6D;
+    --gold:#B8892B; --gold-bright:#D9A94A; --maroon:#6B1330;
+    --line:rgba(36,26,20,0.14); --wa:#1F8A5F;
+    --shadow:0 18px 40px -18px rgba(36,20,16,0.35);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--ivory); color:var(--ink); font-family:'Jost',sans-serif; -webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:'Cinzel',serif; margin:0; letter-spacing:0.02em;}
+  a{color:inherit;}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 24px;}
+
+  .topbar{background:var(--ink); color:var(--ivory); padding:14px 0;}
+  .topbar .wrap{display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+  .brand{display:flex; flex-direction:column; line-height:1;}
+  .brand .name{font-size:18px; letter-spacing:0.06em; color:var(--ivory);}
+  .brand .sub{font-family:'Cormorant Garamond',serif; font-style:italic; color:var(--gold-bright); font-size:12.5px; margin-top:3px;}
+  .conn{display:flex; align-items:center; gap:10px; font-size:12.5px; letter-spacing:0.05em; text-transform:uppercase; color:#b9ac9d;}
+  .conn .dot{width:9px; height:9px; border-radius:50%; background:#777;}
+  .conn.ok .dot{background:var(--wa);}
+  .conn.bad .dot{background:#D64545;}
+
+  .toolbar{display:flex; align-items:center; gap:12px; flex-wrap:wrap; padding:18px 0 6px;}
+  .toolbar .grow{flex:1;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:10px 18px; border:1px solid var(--ink); background:transparent; color:var(--ink);
+    font-family:'Jost',sans-serif; font-size:12.5px; letter-spacing:0.08em; text-transform:uppercase;
+    cursor:pointer; transition:all .2s ease; border-radius:2px;
+  }
+  .btn:hover{background:var(--ink); color:var(--ivory);}
+  .btn.solid{background:var(--teal-deep); border-color:var(--teal-deep); color:var(--ivory);}
+  .btn.solid:hover{background:var(--ink); border-color:var(--ink);}
+  .btn.green{background:var(--wa); border-color:var(--wa); color:#fff;}
+  .btn.green:hover{filter:brightness(0.92);}
+  .btn:disabled{opacity:0.45; cursor:not-allowed;}
+
+  .dirty-pill{
+    font-size:11.5px; letter-spacing:0.1em; text-transform:uppercase;
+    color:var(--maroon); border:1px solid var(--maroon); padding:6px 12px; border-radius:999px;
+    display:none;
+  }
+  .dirty-pill.show{display:inline-block;}
+
+  main{padding:20px 0 70px;}
+  .hint{font-size:13px; color:#7a6a5c; line-height:1.65; margin:0 0 20px;}
+
+  /* connection panel */
+  .panel{
+    background:#fff; border:1px solid var(--line);
+    padding:26px 28px; margin:18px 0 26px;
+  }
+  .panel h2{font-size:18px; margin-bottom:16px; color:var(--teal-deep);}
+  .fields{display:grid; grid-template-columns:repeat(4,1fr); gap:12px;}
+  .fields label{display:flex; flex-direction:column; gap:6px; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#8a7a6c;}
+  .fields input{
+    padding:10px 12px; border:1px solid var(--line); background:var(--ivory); font-size:13.5px;
+    font-family:'Jost',sans-serif; color:var(--ink); outline:none; border-radius:2px;
+  }
+  .fields input:focus{border-color:var(--teal);}
+  .fields .token input{font-family:monospace;}
+  .panel .actions{display:flex; gap:12px; margin-top:18px; align-items:center; flex-wrap:wrap;}
+  .who{font-size:13px; color:#5c4d42;}
+  .who b{color:var(--teal-deep); font-weight:500;}
+  .help{font-size:12.5px; color:#8a7a6c; line-height:1.7; margin-top:16px; padding-top:14px; border-top:1px dashed var(--line);}
+  .help b{color:var(--maroon); font-weight:500;}
+
+  /* product table */
+  .table-head, .prow{
+    display:grid;
+    grid-template-columns:64px 70px 1fr 110px 90px 70px 130px auto;
+    gap:12px; align-items:center;
+    padding:12px 16px;
+  }
+  .table-head{font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:#8a7a6c; border-bottom:1px solid var(--line);}
+  .plist{background:#fff; border:1px solid var(--line);}
+  .prow{border-bottom:1px solid var(--line); font-size:14px;}
+  .prow:last-child{border-bottom:none;}
+  .prow:hover{background:var(--ivory-deep);}
+  .thumb{width:64px; height:64px; object-fit:cover; border:1px solid var(--line); background:#eee;}
+  .ref{font-family:'Cinzel',serif; font-size:11px; color:#8a7a6c; letter-spacing:0.06em;}
+  .ptitle{font-weight:500; line-height:1.35;}
+  .pcolor{display:flex; align-items:center; gap:7px;}
+  .pcolor .dot{width:12px; height:12px; border-radius:50%; border:1px solid rgba(0,0,0,0.15);}
+  .pprice{font-family:'Cinzel',serif; color:var(--rose);}
+  .status{font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; padding:4px 9px; border:1px solid var(--teal); color:var(--teal-deep); text-align:center;}
+  .status.sold{background:var(--maroon); border-color:var(--maroon); color:#fff;}
+  .row-actions{display:flex; gap:6px; justify-content:flex-end;}
+  .icon-btn{
+    width:30px; height:30px; border:1px solid var(--line); background:#fff; color:var(--ink);
+    display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:13px; transition:all .15s ease;
+  }
+  .icon-btn:hover{border-color:var(--ink); background:var(--ink); color:var(--ivory);}
+  .icon-btn.del:hover{border-color:var(--maroon); background:var(--maroon); color:#fff;}
+  .icon-btn svg{width:13px; height:13px;}
+  @media (max-width:900px){
+    .fields{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:760px){
+    .table-head{display:none;}
+    .prow{grid-template-columns:52px 1fr auto; grid-template-areas:"t t t" "p p a"; }
+    .thumb{width:52px; height:52px;}
+    .ref{display:none;}
+    .prow > *{grid-column:2;}
+    .row-actions{grid-area:a;}
+    .ptitle{grid-area:t; grid-column:1/4;}
+    .pcolor,.pprice,.status{grid-column:1/4;}
+  }
+
+  .empty{text-align:center; padding:44px 20px; color:#8a7a6c; font-family:'Cormorant Garamond',serif; font-size:18px;}
+  .foot-note{margin-top:26px; font-size:12px; color:#8a7a6c; text-align:center;}
+
+  /* toast */
+  .toast{
+    position:fixed; right:20px; bottom:20px; z-index:200;
+    background:var(--ink); color:var(--ivory);
+    padding:13px 18px; font-size:13.5px; max-width:420px;
+    box-shadow:var(--shadow); opacity:0; transform:translateY(10px);
+    transition:opacity .25s ease, transform .25s ease; pointer-events:none;
+  }
+  .toast.show{opacity:1; transform:none;}
+  .toast.ok{border-left:3px solid var(--wa);}
+  .toast.err{border-left:3px solid #D64545;}
+
+  /* editor modal */
+  .modal-back{
+    position:fixed; inset:0; z-index:100; background:rgba(36,26,20,0.55);
+    display:none; align-items:flex-start; justify-content:center; padding:40px 18px; overflow:auto;
+  }
+  .modal-back.show{display:flex;}
+  .modal{
+    background:var(--ivory); width:min(780px,100%); border:1px solid var(--line);
+    box-shadow:var(--shadow); padding:30px 32px;
+  }
+  .modal-head{display:flex; align-items:center; justify-content:space-between; margin-bottom:22px;}
+  .modal-head h2{font-size:20px; color:var(--teal-deep);}
+  .modal-close{background:none; border:none; cursor:pointer; color:var(--ink); font-size:20px; width:36px; height:36px;}
+  .form-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  .form-grid .full{grid-column:1/-1;}
+  .form-grid label{display:flex; flex-direction:column; gap:6px; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#8a7a6c;}
+  .form-grid input, .form-grid textarea, .form-grid select{
+    padding:10px 12px; border:1px solid var(--line); background:#fff; font-size:14px;
+    font-family:'Jost',sans-serif; color:var(--ink); outline:none; border-radius:2px; resize:vertical;
+  }
+  .form-grid input:focus, .form-grid textarea:focus{border-color:var(--teal);}
+  .form-grid input[type="color"]{padding:3px; height:42px; cursor:pointer;}
+  .form-grid textarea{min-height:88px; line-height:1.55;}
+  .check{flex-direction:row !important; align-items:center; gap:10px !important;}
+  .check input{width:17px; height:17px; cursor:pointer;}
+  .img-row{display:flex; gap:16px; align-items:center;}
+  .img-current{width:74px; height:92px; object-fit:cover; border:1px solid var(--line); flex:none;}
+  .img-pick{display:flex; flex-direction:column; gap:8px;}
+  .img-pick .file-hint{font-size:11px; letter-spacing:normal; text-transform:none; color:#8a7a6c;}
+  .modal-actions{display:flex; gap:12px; justify-content:flex-end; margin-top:24px;}
+  @media (max-width:760px){ .form-grid{grid-template-columns:1fr;} .img-row{flex-direction:column; align-items:flex-start;} }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <span class="name">KEERTHI FASHIONS</span>
+      <span class="sub">storefront admin</span>
+    </div>
+    <div class="conn" id="connStatus"><span class="dot"></span><span id="connLabel">Not connected</span></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="toolbar">
+    <h2 style="font-size:22px;">Products</h2>
+    <span class="dirty-pill" id="dirtyPill">● Unsaved changes</span>
+    <span class="grow"></span>
+    <button class="btn" id="reloadBtn">Reload from GitHub</button>
+    <button class="btn solid" id="newBtn">+ New Product</button>
+    <button class="btn green" id="publishBtn" disabled>Publish to GitHub</button>
+  </div>
+
+  <p class="hint">Products live in <b>products.json</b> at the repo root — the website loads them automatically. Edit the list below, then press <b>Publish to GitHub</b> to commit your changes. The site refreshes after your next deployment (Vercel rebuilds automatically on push).</p>
+
+  <div class="panel" id="connectPanel">
+    <h2>Connect to GitHub</h2>
+    <div class="fields">
+      <label>GitHub token
+        <input type="password" id="inToken" autocomplete="off" placeholder="github_pat_…">
+      </label>
+      <label>Owner
+        <input type="text" id="inOwner" placeholder="Ascendlabs-webs">
+      </label>
+      <label>Repository
+        <input type="text" id="inRepo" placeholder="keerthi-fashion">
+      </label>
+      <label>Branch
+        <input type="text" id="inBranch" placeholder="main">
+      </label>
+    </div>
+    <div class="actions">
+      <button class="btn solid" id="connectBtn">Connect</button>
+      <button class="btn" id="disconnectBtn" style="display:none;">Disconnect</button>
+      <span class="who" id="whoAmI"></span>
+    </div>
+    <div class="help"><b>Security:</b> the token is stored only in this browser (localStorage) and is never sent anywhere except api.github.com. Create a <b>fine-grained token</b> at github.com/settings/tokens?type=beta → Repository access: <i>Only select repositories</i> → choose this repo → Permissions: <i>Contents: Read and write</i>. After saving it, publish the page once — then the token above stays in your browser, no one else sees it.</div>
+  </div>
+
+  <div class="plist" id="plist">
+    <div class="table-head">
+      <span>Photo</span><span>Ref</span><span>Name</span><span>Shade</span><span>Price</span><span>Status</span><span></span><span style="text-align:right;">Actions</span>
+    </div>
+    <div id="rows"></div>
+    <div class="empty" id="emptyMsg" style="display:none;">Uploading products… or connect on the right to load them from GitHub.</div>
+  </div>
+
+  <p class="foot-note">Keerthi Fashions Admin · a private page for the shop owner — remove this file from the repo if it is no longer needed.</p>
+</div>
+
+<!-- editor modal -->
+<div class="modal-back" id="modalBack">
+  <div class="modal">
+    <div class="modal-head">
+      <h2 id="modalTitle">Edit product</h2>
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+    </div>
+    <div class="form-grid">
+      <label>Product name
+        <input type="text" id="eTitle" placeholder="Emerald Teal Kanjivaram">
+      </label>
+      <label>Reference (auto-assigned)
+        <input type="text" id="eId" disabled placeholder="p22">
+      </label>
+      <label>Shade
+        <input type="text" id="eColor" list="colorList" placeholder="Teal">
+        <datalist id="colorList">
+          <option>Teal</option><option>Pink</option><option>Purple</option><option>Blue</option>
+          <option>Green</option><option>Gold</option><option>Maroon</option><option>Black</option>
+        </datalist>
+      </label>
+      <label>Shade colour
+        <input type="color" id="eHex" value="#116A5C">
+      </label>
+      <label>Price (₹)
+        <input type="number" id="ePrice" min="0" step="1">
+      </label>
+      <label>Sold out
+        <div class="check">
+          <input type="checkbox" id="eSold">
+          <span style="text-transform:none; font-size:13px; color:#5c4d42;">Show "Sold Out" instead of "Ready Stock"</span>
+        </div>
+      </label>
+      <label class="full">Description (shown in the quick-view)
+        <textarea id="eDesc" placeholder="A short, warm description of the piece…"></textarea>
+      </label>
+      <label class="full">Photo
+        <div class="img-row">
+          <img class="img-current" id="eImgPreview" src="" alt="">
+          <div class="img-pick">
+            <input type="file" id="eImgFile" accept="image/*">
+            <span class="file-hint">JPG / PNG. The image is uploaded to <b>assets/products/</b> when you publish. For new products a photo is required.</span>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div class="modal-actions">
+      <button class="btn" id="modalCancel">Cancel</button>
+      <button class="btn solid" id="modalSave">Save product</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  // ---------------- STATE ----------------
+  const LS = { token:"kf_token", owner:"kf_owner", repo:"kf_repo", branch:"kf_branch" };
+  let products = [];
+  let currentSha = null;
+  let connected = false;
+  let pendingImages = [];   // { name, path, b64 }
+  let editing = null;       // id being edited, or "NEW"
+  let currentImageB64 = null;
+
+  const $ = id => document.getElementById(id);
+
+  // ---------------- HELPERS ----------------
+  function readCfg(){
+    return {
+      token: $("inToken").value.trim(),
+      owner: $("inOwner").value.trim(),
+      repo: $("inRepo").value.trim(),
+      branch: $("inBranch").value.trim() || "main"
+    };
+  }
+  function persistCfg(){
+    const c = readCfg();
+    localStorage.setItem(LS.token, c.token);
+    localStorage.setItem(LS.owner, c.owner);
+    localStorage.setItem(LS.repo, c.repo);
+    localStorage.setItem(LS.branch, c.branch);
+  }
+  function restoreCfg(){
+    if(localStorage.getItem(LS.token)) $("inToken").value = localStorage.getItem(LS.token);
+    if(localStorage.getItem(LS.owner)) $("inOwner").value = localStorage.getItem(LS.owner);
+    if(localStorage.getItem(LS.repo))  $("inRepo").value = localStorage.getItem(LS.repo);
+    if(localStorage.getItem(LS.branch))$("inBranch").value = localStorage.getItem(LS.branch);
+  }
+  function b64Encode(str){
+    const bytes = new TextEncoder().encode(str);
+    let bin = "";
+    bytes.forEach(b => bin += String.fromCharCode(b));
+    return btoa(bin);
+  }
+  function b64Decode(b64){
+    const bin = atob(b64.replace(/\s/g, ""));
+    const bytes = Uint8Array.from(bin, c => c.charCodeAt(0));
+    return new TextDecoder().decode(bytes);
+  }
+  let toastTimer = null;
+  function toast(msg, ok){
+    const t = $("toast");
+    t.textContent = msg;
+    t.className = "toast show " + (ok ? "ok" : "err");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(()=> t.className = "toast", 3800);
+  }
+  function setConn(ok, label){
+    connected = ok;
+    $("connStatus").className = "conn " + (ok ? "ok" : "bad");
+    $("connLabel").textContent = label;
+  }
+  function setBusy(busy){
+    $("connectBtn").disabled = busy;
+    $("publishBtn").disabled = busy || !connected || !isDirty();
+    $("reloadBtn").disabled = busy || !connected;
+  }
+
+  // ---------------- GITHUB API ----------------
+  async function gh(path, opts){
+    const cfg = readCfg();
+    const res = await fetch("https://api.github.com" + path, Object.assign({
+      headers: {
+        Authorization: "Bearer " + cfg.token,
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28"
+      }
+    }, opts || {}));
+    const data = await res.json().catch(() => ({}));
+    if(!res.ok){
+      const err = new Error((data.message || "Request failed") + " (" + res.status + ")");
+      err.status = res.status;
+      throw err;
+    }
+    return data;
+  }
+  function repoPath(file){
+    return "/repos/" + encodeURIComponent(readCfg().owner) + "/" + encodeURIComponent(readCfg().repo) + "/contents/" + file;
+  }
+  function repoUrl(query){
+    return "/repos/" + encodeURIComponent(readCfg().owner) + "/" + encodeURIComponent(readCfg().repo) + query;
+  }
+
+  // ---------------- CONNECT / LOAD ----------------
+  async function connect(){
+    persistCfg();
+    const c = readCfg();
+    if(!c.token || !c.owner || !c.repo){
+      toast("Fill in the token, owner and repository first.", false);
+      return;
+    }
+    setBusy(true);
+    try{
+      const user = await gh("/user");
+      await gh(repoUrl("?per_page=1"));
+      setConn(true, "Connected as " + user.login);
+      $("whoAmI").textContent = "";
+      $("disconnectBtn").style.display = "";
+      await loadFromGitHub(true);
+    }catch(e){
+      setConn(false, "Connection failed");
+      $("whoAmI").textContent = e.message;
+      toast("Could not connect: " + e.message, false);
+    }
+    setBusy(false);
+  }
+
+  async function loadFromGitHub(silent){
+    const c = readCfg();
+    try{
+      const f = await gh(repoPath("products.json") + "?ref=" + encodeURIComponent(c.branch));
+      currentSha = f.sha;
+      products = JSON.parse(b64Decode(f.content));
+      pendingImages = [];
+      currentImageB64 = null;
+      markClean();
+      renderRows();
+      if(!silent) toast("Loaded " + products.length + " products from GitHub.", true);
+    }catch(e){
+      if(e.status === 404){
+        products = [];
+        currentSha = null;
+        markClean();
+        renderRows();
+        if(!silent) toast("No products.json found yet — create your first product and publish.", false);
+      } else if(!silent){
+        toast("Could not load products.json: " + e.message, false);
+      }
+    }
+  }
+
+  // ---------------- DIRTY STATE ----------------
+  let dirty = false;
+  function markDirty(){
+    dirty = true;
+    $("dirtyPill").classList.add("show");
+    $("publishBtn").disabled = !connected;
+  }
+  function markClean(){
+    dirty = false;
+    $("dirtyPill").classList.remove("show");
+    $("publishBtn").disabled = !connected;
+  }
+  function isDirty(){ return dirty; }
+  function refreshPublishState(){ $("publishBtn").disabled = !connected || !dirty; }
+
+  // ---------------- RENDER ROWS ----------------
+  function esc(s){
+    return String(s == null ? "" : s).replace(/[&<>"']/g, m => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[m]));
+  }
+  function renderRows(){
+    $("emptyMsg").style.display = products.length ? "none" : "block";
+    $("rows").innerHTML = products.map((p, i) => `
+      <div class="prow">
+        <img class="thumb" src="${esc(p.img)}" alt="">
+        <span class="ref">${esc(p.id.toUpperCase())}</span>
+        <span class="ptitle">${esc(p.title)}</span>
+        <span class="pcolor"><span class="dot" style="background:${esc(p.hex || "#ccc")}"></span>${esc(p.color)}</span>
+        <span class="pprice">₹${esc(p.price)}</span>
+        <span class="status ${p.soldOut ? "sold" : ""}">${p.soldOut ? "Sold Out" : "In Stock"}</span>
+        <span></span>
+        <span class="row-actions">
+          <button class="icon-btn" title="Move up" data-act="up" data-i="${i}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+          <button class="icon-btn" title="Move down" data-act="down" data-i="${i}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg></button>
+          <button class="icon-btn" title="Edit" data-act="edit" data-i="${i}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20h4L20 8l-4-4L4 16v4z"/></svg></button>
+          <button class="icon-btn del" title="Delete" data-act="del" data-i="${i}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></svg></button>
+        </span>
+      </div>
+    `).join("");
+
+    $("rows").querySelectorAll(".icon-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const i = +btn.dataset.i;
+        const act = btn.dataset.act;
+        if(act === "up" && i > 0)      { [products[i-1], products[i]] = [products[i], products[i-1]]; markDirty(); refreshPublishState(); renderRows(); }
+        else if(act === "down" && i < products.length-1) { [products[i+1], products[i]] = [products[i], products[i+1]]; markDirty(); refreshPublishState(); renderRows(); }
+        else if(act === "edit")        openEditor(products[i]);
+        else if(act === "del"){
+          if(confirm("Delete \"" + products[i].title + "\" from the list? The image file stays in the repo.")){
+            products.splice(i, 1);
+            markDirty(); refreshPublishState(); renderRows();
+          }
+        }
+      });
+    });
+  }
+
+  // ---------------- EDITOR ----------------
+  function nextId(){
+    let max = 0;
+    products.forEach(p => {
+      const m = /^p(\d+)$/.exec(String(p.id || ""));
+      if(m) max = Math.max(max, +m[1]);
+    });
+    return "p" + (max + 1);
+  }
+
+  function openEditor(p){
+    editing = p ? p.id : "NEW";
+    $("modalTitle").textContent = p ? "Edit product — " + p.id.toUpperCase() : "New product";
+    $("eTitle").value = p ? p.title : "";
+    $("eId").value = p ? p.id : nextId();
+    $("eColor").value = p ? p.color : "";
+    $("eHex").value = p && p.hex ? p.hex : "#116A5C";
+    $("ePrice").value = p ? p.price : "";
+    $("eSold").checked = p ? !!p.soldOut : false;
+    $("eDesc").value = p ? (p.desc || "") : "";
+    $("eImgPreview").src = p && p.img ? p.img : "";
+    $("eImgFile").value = "";
+    currentImageB64 = null;
+    $("modalBack").classList.add("show");
+    $("eTitle").focus();
+  }
+  function closeEditor(){ $("modalBack").classList.remove("show"); editing = null; }
+
+  $("modalClose").addEventListener("click", closeEditor);
+  $("modalCancel").addEventListener("click", closeEditor);
+  $("modalBack").addEventListener("click", e => { if(e.target === $("modalBack")) closeEditor(); });
+
+  $("eImgFile").addEventListener("change", e => {
+    const file = e.target.files[0];
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      const dataUrl = String(reader.result);
+      const i = dataUrl.indexOf(",");
+      const meta = dataUrl.slice(0, i);
+      const b64 = dataUrl.slice(i + 1);
+      $("eImgPreview").src = dataUrl;
+      currentImageB64 = { name: file.name, b64, isJpg: /jpeg|jpg/i.test(meta) };
+    };
+    reader.readAsDataURL(file);
+  });
+
+  $("modalSave").addEventListener("click", () => {
+    const title = $("eTitle").value.trim();
+    const color = $("eColor").value.trim();
+    const price = Math.round(+$("ePrice").value);
+    const desc = $("eDesc").value.trim();
+    const id = $("eId").value.trim() || nextId();
+    const soldOut = $("eSold").checked;
+
+    if(!title){ toast("Give the product a name.", false); return; }
+    if(!color){ toast("Pick a shade.", false); return; }
+    if(!(price >= 0)){ toast("Enter a valid price.", false); return; }
+
+    const target = products.find(p => p.id === id && editing === id);
+    const img = currentImageB64;
+    if(!target && !img){ toast("New products need a photo — choose an image file.", false); return; }
+
+    let newImgPath = null;
+    if(img){
+      const safeName = id.replace(/[^a-zA-Z0-9_-]/g, "_");
+      newImgPath = "assets/products/" + safeName + (img.isJpg ? ".jpg" : ".png");
+      pendingImages.push({ name: safeName + (img.isJpg ? ".jpg" : ".png"), path: newImgPath, b64: img.b64 });
+    }
+
+    const data = {
+      id,
+      img: newImgPath || (target ? target.img : ""),
+      title,
+      color,
+      hex: $("eHex").value || "#B8892B",
+      price,
+      desc,
+      soldOut: soldOut || undefined
+    };
+    if(!data.soldOut) delete data.soldOut;
+
+    if(target){
+      Object.assign(target, data);
+    } else {
+      products.push(data);
+    }
+    closeEditor();
+    markDirty(); refreshPublishState(); renderRows();
+    toast("Product saved locally. Press Publish to GitHub when ready.", false);
+  });
+
+  // ---------------- PUBLISH ----------------
+  async function publish(){
+    const cfg = readCfg();
+    if(!connected){ toast("Connect to GitHub first.", false); return; }
+    setBusy(true);
+    try{
+      const fresh = await gh(repoPath("products.json") + "?ref=" + encodeURIComponent(cfg.branch));
+      if(fresh.sha && currentSha && fresh.sha !== currentSha){
+        toast("products.json changed on GitHub since you loaded it. Click Reload from GitHub, re-apply your edits, and publish again.", false);
+        setBusy(false);
+        return;
+      }
+    }catch(e){
+      if(e.status !== 404){ toast("Could not verify latest state: " + e.message, false); setBusy(false); return; }
+    }
+
+    try{
+      for(const img of pendingImages){
+        let sha = null;
+        try{
+          const ex = await gh(repoPath(img.path) + "?ref=" + encodeURIComponent(cfg.branch));
+          sha = ex.sha;
+        }catch(e){ /* new file — create */ }
+        await gh(repoPath(img.path), {
+          method: "PUT",
+          body: JSON.stringify({
+            message: "Add product image " + img.name + " via admin",
+            content: img.b64,
+            branch: cfg.branch,
+            sha: sha || undefined
+          })
+        });
+      }
+
+      const content = b64Encode(JSON.stringify(products, null, 2) + "\n");
+      const up = await gh(repoPath("products.json"), {
+        method: "PUT",
+        body: JSON.stringify({
+          message: "Update products via admin (" + products.length + " pieces)",
+          content: content,
+          branch: cfg.branch,
+          sha: currentSha || undefined
+        })
+      });
+      currentSha = up.content.sha;
+      pendingImages = [];
+      currentImageB64 = null;
+      markClean();
+      toast("Published to GitHub. The site rebuilds on the next deploy.", true);
+    }catch(e){
+      toast("Publish failed: " + e.message, false);
+    }
+    setBusy(false);
+  }
+
+  // ---------------- WIRING ----------------
+  $("connectBtn").addEventListener("click", connect);
+  $("disconnectBtn").addEventListener("click", () => {
+    setConn(false, "Not connected");
+    $("whoAmI").textContent = "";
+    $("disconnectBtn").style.display = "none";
+  });
+  $("reloadBtn").addEventListener("click", () => {
+    if(dirty && !confirm("You have unsaved changes. Reloading discards them. Continue?")) return;
+    loadFromGitHub(false);
+  });
+  $("newBtn").addEventListener("click", () => openEditor(null));
+  $("publishBtn").addEventListener("click", publish);
+
+  restoreCfg();
+  if($("inToken").value) connect();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+[
+  {
+    "id": "p01",
+    "img": "assets/products/p01.jpg",
+    "title": "Emerald Teal Kanjivaram",
+    "color": "Teal",
+    "hex": "#116A5C",
+    "price": 850,
+    "desc": "A deep emerald body with copper zari buttas and a blush pink contrast pallu — a quiet, regal drape for day functions."
+  },
+  {
+    "id": "p02",
+    "img": "assets/products/p02.jpg",
+    "title": "Rani Pink Kanjivaram",
+    "color": "Pink",
+    "hex": "#C21E6D",
+    "price": 850,
+    "desc": "A classic rani pink with a heavier grand pallu — celebratory without being loud, made for poojas and sangeet evenings.",
+    "soldOut": true
+  },
+  {
+    "id": "p03",
+    "img": "assets/products/p03.jpg",
+    "title": "Royal Violet Kanjivaram",
+    "color": "Purple",
+    "hex": "#4A1F5E",
+    "price": 850,
+    "desc": "Royal violet silk with copper zari that catches light as you move. One of the most requested shades this season."
+  },
+  {
+    "id": "p04",
+    "img": "assets/products/p04.jpg",
+    "title": "Peacock Blue Kanjivaram",
+    "color": "Blue",
+    "hex": "#1B4F8C",
+    "price": 850,
+    "desc": "Peacock blue with a contrasting gold-edged pallu. A full-day weave — temple in the morning, reception by evening."
+  },
+  {
+    "id": "p05",
+    "img": "assets/products/p05.jpg",
+    "title": "Deep Amethyst Kanjivaram",
+    "color": "Purple",
+    "hex": "#4A1F5E",
+    "price": 850,
+    "desc": "Deep amethyst folded over itself — flatlay perfection. Copper zari border detail that stays crisp in photos."
+  },
+  {
+    "id": "p06",
+    "img": "assets/products/p06.jpg",
+    "title": "Sky Blue Kanjivaram",
+    "color": "Blue",
+    "hex": "#1B4F8C",
+    "price": 850,
+    "desc": "Sky blue lightness in soft silk, with a zari pallu that gives it enough weight to fall beautifully."
+  },
+  {
+    "id": "p07",
+    "img": "assets/products/p07.jpg",
+    "title": "Meadow Green Kanjivaram",
+    "color": "Green",
+    "hex": "#2F7A4F",
+    "price": 850,
+    "desc": "Meadow green with copper buttas — a fresh shade that photographs rich under temple and hall lighting alike."
+  },
+  {
+    "id": "p08",
+    "img": "assets/products/p08.jpg",
+    "title": "Bottle Green Kanjivaram",
+    "color": "Green",
+    "hex": "#2F7A4F",
+    "price": 850,
+    "desc": "Bottle green depth with a contrast zari pallu. Understated at first glance, unmistakable up close."
+  },
+  {
+    "id": "p09",
+    "img": "assets/products/p09.jpg",
+    "title": "Amethyst Gold Kanjivaram",
+    "color": "Purple",
+    "hex": "#4A1F5E",
+    "price": 850,
+    "desc": "Amethyst with gold zari accents — the mix warms the purple and makes the drape glow at dusk."
+  },
+  {
+    "id": "p10",
+    "img": "assets/products/p10.jpg",
+    "title": "Indigo Violet Kanjivaram",
+    "color": "Purple",
+    "hex": "#4A1F5E",
+    "price": 850,
+    "desc": "Indigo violet, deep as a night sky, with woven zari that picks up every bit of light."
+  },
+  {
+    "id": "p11",
+    "img": "assets/products/p11.jpg",
+    "title": "Maroon Blush Kanjivaram",
+    "color": "Maroon",
+    "hex": "#6B1330",
+    "price": 850,
+    "desc": "Maroon with a blush contrast pallu — a festive classic that needs no accessorising."
+  },
+  {
+    "id": "p12",
+    "img": "assets/products/p12.jpg",
+    "title": "Midnight Rose Kanjivaram",
+    "color": "Black",
+    "hex": "#1c1c1c",
+    "price": 850,
+    "desc": "Midnight black with rose-toned zari — a cocktail-hour drape with a quiet drama."
+  },
+  {
+    "id": "p13",
+    "img": "assets/products/p13.jpg",
+    "title": "Cerulean Copper Kanjivaram",
+    "color": "Blue",
+    "hex": "#1B4F8C",
+    "price": 850,
+    "desc": "Cerulean blue against copper zari — a pairing that reads elegant in person and even better on camera."
+  },
+  {
+    "id": "p14",
+    "img": "assets/products/p14.jpg",
+    "title": "Mustard Maroon Kanjivaram",
+    "color": "Gold",
+    "hex": "#B8892B",
+    "price": 850,
+    "desc": "Mustard gold with maroon borders — an autumn palette woven for pongal mornings and evening poojas."
+  },
+  {
+    "id": "p15",
+    "img": "assets/products/p15.jpg",
+    "title": "Antique Gold Kanjivaram",
+    "color": "Gold",
+    "hex": "#B8892B",
+    "price": 850,
+    "desc": "Antique gold throughout — the saree equivalent of jewellery, best worn with the simplest blouse.",
+    "soldOut": true
+  },
+  {
+    "id": "p16",
+    "img": "assets/products/p16.jpg",
+    "title": "Navy Zari Kanjivaram",
+    "color": "Blue",
+    "hex": "#1B4F8C",
+    "price": 850,
+    "desc": "Navy with silver-touched zari — cool-toned and grounding, a safe bet for formal evenings."
+  },
+  {
+    "id": "p17",
+    "img": "assets/products/p17.jpg",
+    "title": "Grape Teal Kanjivaram",
+    "color": "Purple",
+    "hex": "#4A1F5E",
+    "price": 850,
+    "desc": "Grape meeting teal in the body, with a grand zari pallu holding the composition together."
+  },
+  {
+    "id": "p18",
+    "img": "assets/products/p18.jpg",
+    "title": "Blush Noir Kanjivaram",
+    "color": "Pink",
+    "hex": "#C21E6D",
+    "price": 850,
+    "desc": "Blush pink with noir borders — soft and modern, ideal for a daytime engagement or a mehndi."
+  },
+  {
+    "id": "p19",
+    "img": "assets/products/p19.jpg",
+    "title": "Wine Violet Kanjivaram",
+    "color": "Maroon",
+    "hex": "#6B1330",
+    "price": 850,
+    "desc": "Wine and violet in one drape — a moody shade flattering under evening lights."
+  },
+  {
+    "id": "p20",
+    "img": "assets/products/p20.jpg",
+    "title": "Citrus Lime Kanjivaram",
+    "color": "Green",
+    "hex": "#2F7A4F",
+    "price": 850,
+    "desc": "Citrus lime for the brave — bright, joyful and guaranteed to stand out in a sea of reds and pinks."
+  },
+  {
+    "id": "p21",
+    "img": "assets/products/p21.jpg",
+    "title": "Lilac Grey Kanjivaram",
+    "color": "Purple",
+    "hex": "#4A1F5E",
+    "price": 850,
+    "desc": "Lilac softened by grey — a quiet, elegant shade that works for parties and poojas alike."
+  }
+]
