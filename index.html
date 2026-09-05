@@ -1259,7 +1259,7 @@
     <div class="section-head reveal">
       <div class="eyebrow">Ready Stock</div>
       <h2>The Current Collection</h2>
-      <p>21 pieces, each one-of-a-kind. Filter by shade, search, or tap a piece for a closer look — availability is confirmed over WhatsApp.</p>
+      <p><span id="collectionCount">111</span> pieces across sarees, kurtis, co-ords &amp; more. Filter by category or shade, search, or tap a piece for a closer look — availability is confirmed over WhatsApp.</p>
     </div>
 
     <div class="collection-tools reveal">
@@ -1274,6 +1274,8 @@
         <option value="name-asc">Name: A to Z</option>
       </select>
     </div>
+
+    <div class="filters" id="catFilters" style="margin-bottom:16px;"></div>
 
     <div class="filters" id="filters"></div>
 
@@ -1570,13 +1572,13 @@
       <span class="qv-price" id="qvPrice"></span>
       <p class="qv-desc" id="qvDesc"></p>
       <div class="qv-field">
-        <label for="qvSize">Belly / blouse size</label>
+        <label for="qvSize" id="qvSizeLabel">Belly / blouse size</label>
         <select id="qvSize">
           <option value="Free size (standard 5.5 m)">Free size (standard 5.5 m)</option>
           <option value="Extra long (5.8 m)">Extra long (5.8 m)</option>
         </select>
       </div>
-      <div class="qv-field">
+      <div class="qv-field" id="qvSleeveField">
         <label for="qvSleeve">Blouse sleeve preference</label>
         <select id="qvSleeve">
           <option value="Sleeveless">Sleeveless</option>
@@ -1643,38 +1645,126 @@
   // Products are served from products.json (editable via admin.html).
   // The array below is only a fallback if the JSON can't be fetched.
   const FALLBACK_PRODUCTS = [
-    { id:"p01", img:"assets/products/p01.jpg", title:"Emerald Teal Kanjivaram", color:"Teal",   hex:"#116A5C", price:850, desc:"A deep emerald body with copper zari buttas and a blush pink contrast pallu — a quiet, regal drape for day functions." },
-    { id:"p02", img:"assets/products/p02.jpg", title:"Rani Pink Kanjivaram",   color:"Pink",   hex:"#C21E6D", price:850, desc:"A classic rani pink with a heavier grand pallu — celebratory without being loud, made for poojas and sangeet evenings." },
-    { id:"p03", img:"assets/products/p03.jpg", title:"Royal Violet Kanjivaram",color:"Purple", hex:"#4A1F5E", price:850, desc:"Royal violet silk with copper zari that catches light as you move. One of the most requested shades this season." },
-    { id:"p04", img:"assets/products/p04.jpg", title:"Peacock Blue Kanjivaram",color:"Blue",   hex:"#1B4F8C", price:850, desc:"Peacock blue with a contrasting gold-edged pallu. A full-day weave — temple in the morning, reception by evening." },
-    { id:"p05", img:"assets/products/p05.jpg", title:"Deep Amethyst Kanjivaram",color:"Purple",hex:"#4A1F5E", price:850, desc:"Deep amethyst folded over itself — flatlay perfection. Copper zari border detail that stays crisp in photos." },
-    { id:"p06", img:"assets/products/p06.jpg", title:"Sky Blue Kanjivaram",    color:"Blue",   hex:"#1B4F8C", price:850, desc:"Sky blue lightness in soft silk, with a zari pallu that gives it enough weight to fall beautifully." },
-    { id:"p07", img:"assets/products/p07.jpg", title:"Meadow Green Kanjivaram",color:"Green",  hex:"#2F7A4F", price:850, desc:"Meadow green with copper buttas — a fresh shade that photographs rich under temple and hall lighting alike." },
-    { id:"p08", img:"assets/products/p08.jpg", title:"Bottle Green Kanjivaram",color:"Green",  hex:"#2F7A4F", price:850, desc:"Bottle green depth with a contrast zari pallu. Understated at first glance, unmistakable up close." },
-    { id:"p09", img:"assets/products/p09.jpg", title:"Amethyst Gold Kanjivaram",color:"Purple",hex:"#4A1F5E", price:850, desc:"Amethyst with gold zari accents — the mix warms the purple and makes the drape glow at dusk." },
-    { id:"p10", img:"assets/products/p10.jpg", title:"Indigo Violet Kanjivaram",color:"Purple",hex:"#4A1F5E", price:850, desc:"Indigo violet, deep as a night sky, with woven zari that picks up every bit of light." },
-    { id:"p11", img:"assets/products/p11.jpg", title:"Maroon Blush Kanjivaram",color:"Maroon", hex:"#6B1330", price:850, desc:"Maroon with a blush contrast pallu — a festive classic that needs no accessorising." },
-    { id:"p12", img:"assets/products/p12.jpg", title:"Midnight Rose Kanjivaram",color:"Black", hex:"#1c1c1c", price:850, desc:"Midnight black with rose-toned zari — a cocktail-hour drape with a quiet drama." },
-    { id:"p13", img:"assets/products/p13.jpg", title:"Cerulean Copper Kanjivaram",color:"Blue",hex:"#1B4F8C", price:850, desc:"Cerulean blue against copper zari — a pairing that reads elegant in person and even better on camera." },
-    { id:"p14", img:"assets/products/p14.jpg", title:"Mustard Maroon Kanjivaram",color:"Gold", hex:"#B8892B", price:850, desc:"Mustard gold with maroon borders — an autumn palette woven for pongal mornings and evening poojas." },
-    { id:"p15", img:"assets/products/p15.jpg", title:"Antique Gold Kanjivaram",color:"Gold",  hex:"#B8892B", price:850, desc:"Antique gold throughout — the saree equivalent of jewellery, best worn with the simplest blouse." },
-    { id:"p16", img:"assets/products/p16.jpg", title:"Navy Zari Kanjivaram",   color:"Blue",   hex:"#1B4F8C", price:850, desc:"Navy with silver-touched zari — cool-toned and grounding, a safe bet for formal evenings." },
-    { id:"p17", img:"assets/products/p17.jpg", title:"Grape Teal Kanjivaram",  color:"Purple", hex:"#4A1F5E", price:850, desc:"Grape meeting teal in the body, with a grand zari pallu holding the composition together." },
-    { id:"p18", img:"assets/products/p18.jpg", title:"Blush Noir Kanjivaram",  color:"Pink",   hex:"#C21E6D", price:850, desc:"Blush pink with noir borders — soft and modern, ideal for a daytime engagement or a mehndi." },
-    { id:"p19", img:"assets/products/p19.jpg", title:"Wine Violet Kanjivaram", color:"Maroon", hex:"#6B1330", price:850, desc:"Wine and violet in one drape — a moody shade flattering under evening lights." },
-    { id:"p20", img:"assets/products/p20.jpg", title:"Citrus Lime Kanjivaram", color:"Green",  hex:"#2F7A4F", price:850, desc:"Citrus lime for the brave — bright, joyful and guaranteed to stand out in a sea of reds and pinks." },
-    { id:"p21", img:"assets/products/p21.jpg", title:"Lilac Grey Kanjivaram",  color:"Purple", hex:"#4A1F5E", price:850, desc:"Lilac softened by grey — a quiet, elegant shade that works for parties and poojas alike." },
-    { id:"p22", img:"assets/products/p22.jpg", title:"Samuthrika Vasthrakala Wedding Kanjivaram", color:"Blue", hex:"#0000FF", price:1550, desc:"Samuthrika & vasthrakala type wedding model — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse." },
+    { id:"p01", img:"assets/products/p01.jpg", title:"Emerald Teal Kanjivaram", color:"Teal", hex:"#116A5C", price:850, desc:"A deep emerald body with copper zari buttas and a blush pink contrast pallu — a quiet, regal drape for day functions.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p02", img:"assets/products/p02.jpg", title:"Rani Pink Kanjivaram", color:"Pink", hex:"#C21E6D", price:850, desc:"A classic rani pink with a heavier grand pallu — celebratory without being loud, made for poojas and sangeet evenings.", category:"Soft Silk Sarees", kind:"saree", soldOut:true },
+    { id:"p03", img:"assets/products/p03.jpg", title:"Royal Violet Kanjivaram", color:"Purple", hex:"#4A1F5E", price:850, desc:"Royal violet silk with copper zari that catches light as you move. One of the most requested shades this season.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p04", img:"assets/products/p04.jpg", title:"Peacock Blue Kanjivaram", color:"Blue", hex:"#1B4F8C", price:850, desc:"Peacock blue with a contrasting gold-edged pallu. A full-day weave — temple in the morning, reception by evening.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p05", img:"assets/products/p05.jpg", title:"Deep Amethyst Kanjivaram", color:"Purple", hex:"#4A1F5E", price:850, desc:"Deep amethyst folded over itself — flatlay perfection. Copper zari border detail that stays crisp in photos.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p06", img:"assets/products/p06.jpg", title:"Sky Blue Kanjivaram", color:"Blue", hex:"#1B4F8C", price:850, desc:"Sky blue lightness in soft silk, with a zari pallu that gives it enough weight to fall beautifully.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p07", img:"assets/products/p07.jpg", title:"Meadow Green Kanjivaram", color:"Green", hex:"#2F7A4F", price:850, desc:"Meadow green with copper buttas — a fresh shade that photographs rich under temple and hall lighting alike.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p08", img:"assets/products/p08.jpg", title:"Bottle Green Kanjivaram", color:"Green", hex:"#2F7A4F", price:850, desc:"Bottle green depth with a contrast zari pallu. Understated at first glance, unmistakable up close.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p09", img:"assets/products/p09.jpg", title:"Amethyst Gold Kanjivaram", color:"Purple", hex:"#4A1F5E", price:850, desc:"Amethyst with gold zari accents — the mix warms the purple and makes the drape glow at dusk.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p10", img:"assets/products/p10.jpg", title:"Indigo Violet Kanjivaram", color:"Purple", hex:"#4A1F5E", price:850, desc:"Indigo violet, deep as a night sky, with woven zari that picks up every bit of light.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p11", img:"assets/products/p11.jpg", title:"Maroon Blush Kanjivaram", color:"Maroon", hex:"#6B1330", price:850, desc:"Maroon with a blush contrast pallu — a festive classic that needs no accessorising.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p12", img:"assets/products/p12.jpg", title:"Midnight Rose Kanjivaram", color:"Black", hex:"#1c1c1c", price:850, desc:"Midnight black with rose-toned zari — a cocktail-hour drape with a quiet drama.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p13", img:"assets/products/p13.jpg", title:"Cerulean Copper Kanjivaram", color:"Blue", hex:"#1B4F8C", price:850, desc:"Cerulean blue against copper zari — a pairing that reads elegant in person and even better on camera.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p14", img:"assets/products/p14.jpg", title:"Mustard Maroon Kanjivaram", color:"Gold", hex:"#B8892B", price:850, desc:"Mustard gold with maroon borders — an autumn palette woven for pongal mornings and evening poojas.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p15", img:"assets/products/p15.jpg", title:"Antique Gold Kanjivaram", color:"Gold", hex:"#B8892B", price:850, desc:"Antique gold throughout — the saree equivalent of jewellery, best worn with the simplest blouse.", category:"Soft Silk Sarees", kind:"saree", soldOut:true },
+    { id:"p16", img:"assets/products/p16.jpg", title:"Navy Zari Kanjivaram", color:"Blue", hex:"#1B4F8C", price:850, desc:"Navy with silver-touched zari — cool-toned and grounding, a safe bet for formal evenings.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p17", img:"assets/products/p17.jpg", title:"Grape Teal Kanjivaram", color:"Purple", hex:"#4A1F5E", price:850, desc:"Grape meeting teal in the body, with a grand zari pallu holding the composition together.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p18", img:"assets/products/p18.jpg", title:"Blush Noir Kanjivaram", color:"Pink", hex:"#C21E6D", price:850, desc:"Blush pink with noir borders — soft and modern, ideal for a daytime engagement or a mehndi.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p19", img:"assets/products/p19.jpg", title:"Wine Violet Kanjivaram", color:"Maroon", hex:"#6B1330", price:850, desc:"Wine and violet in one drape — a moody shade flattering under evening lights.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p20", img:"assets/products/p20.jpg", title:"Citrus Lime Kanjivaram", color:"Green", hex:"#2F7A4F", price:850, desc:"Citrus lime for the brave — bright, joyful and guaranteed to stand out in a sea of reds and pinks.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p21", img:"assets/products/p21.jpg", title:"Lilac Grey Kanjivaram", color:"Purple", hex:"#4A1F5E", price:850, desc:"Lilac softened by grey — a quiet, elegant shade that works for parties and poojas alike.", category:"Soft Silk Sarees", kind:"saree" },
+    { id:"p22", img:"assets/products/p22.jpg", title:"samuthrika & vasthrakala type wedding model", color:"Blue", hex:"#0000ff", price:1550, desc:"Fancy design and fancy models..🌹*\n\n*🌹Bady all over grand colour full Jari buttas🌹*\n\n*🌹Contrast border & pallu & blouse..🌹1550", category:"Wedding Sarees", kind:"saree" },
+    { id:"p23", img:"assets/products/p23.jpg", title:"Teal Co-ord Set D01", color:"Teal", hex:"#116A5C", price:599, desc:"Berlin cords / Vatican silk co-ord set. Top length 43in, bottom 39in. Stock clearance sale — Rs.599 + shipping.", category:"Co-ord Sets", kind:"stitched", sizes:["M","L","XL","XXL","3XL"] },
+    { id:"p24", img:"assets/products/p24.jpg", title:"Pink Co-ord Set D01", color:"Pink", hex:"#C21E6D", price:599, desc:"Berlin cords / Vatican silk co-ord set. Top length 43in, bottom 39in. Stock clearance sale — Rs.599 + shipping.", category:"Co-ord Sets", kind:"stitched", sizes:["M","L","XL","XXL","3XL"] },
+    { id:"p25", img:"assets/products/p25.jpg", title:"Pink Co-ord Set D02", color:"Pink", hex:"#C21E6D", price:599, desc:"Berlin cords / Vatican silk co-ord set. Top length 43in, bottom 39in. Stock clearance sale — Rs.599 + shipping.", category:"Co-ord Sets", kind:"stitched", sizes:["M","L","XL","XXL","3XL"] },
+    { id:"p26", img:"assets/products/p26.jpg", title:"Green Co-ord Set D01", color:"Green", hex:"#2F7A4F", price:599, desc:"Berlin cords / Vatican silk co-ord set. Top length 43in, bottom 39in. Stock clearance sale — Rs.599 + shipping.", category:"Co-ord Sets", kind:"stitched", sizes:["M","L","XL","XXL","3XL"] },
+    { id:"p27", img:"assets/products/p27.jpg", title:"Maroon Co-ord Set D01", color:"Maroon", hex:"#6B1330", price:599, desc:"Berlin cords / Vatican silk co-ord set. Top length 43in, bottom 39in. Stock clearance sale — Rs.599 + shipping.", category:"Co-ord Sets", kind:"stitched", sizes:["M","L","XL","XXL","3XL"] },
+    { id:"p28", img:"assets/products/p28.jpg", title:"Pink Co-ord Set D03", color:"Pink", hex:"#C21E6D", price:599, desc:"Berlin cords / Vatican silk co-ord set. Top length 43in, bottom 39in. Stock clearance sale — Rs.599 + shipping.", category:"Co-ord Sets", kind:"stitched", sizes:["M","L","XL","XXL","3XL"] },
+    { id:"p29", img:"assets/products/p29.jpg", title:"Blue Co-ord Set D01", color:"Blue", hex:"#1B4F8C", price:599, desc:"Berlin cords / Vatican silk co-ord set. Top length 43in, bottom 39in. Stock clearance sale — Rs.599 + shipping.", category:"Co-ord Sets", kind:"stitched", sizes:["M","L","XL","XXL","3XL"] },
+    { id:"p30", img:"assets/products/p30.jpg", title:"Pink Cotton 3-Piece Set D01", color:"Pink", hex:"#C21E6D", price:1050, desc:"Dabu cotton three-piece set — straight-cut top with yoke & sleeve work (43in), straight pant (39in), Kota checks dupatta. Rs.1050 with free shipping.", category:"Cotton 3-Piece Sets", kind:"stitched", sizes:["M","L","XL","XXL","3XL"] },
+    { id:"p31", img:"assets/products/p31.jpg", title:"Gold Cotton 3-Piece Set D01", color:"Gold", hex:"#B8892B", price:1050, desc:"Dabu cotton three-piece set — straight-cut top with yoke & sleeve work (43in), straight pant (39in), Kota checks dupatta. Rs.1050 with free shipping.", category:"Cotton 3-Piece Sets", kind:"stitched", sizes:["M","L","XL","XXL","3XL"] },
+    { id:"p32", img:"assets/products/p32.jpg", title:"Maroon Cotton 3-Piece Set D01", color:"Maroon", hex:"#6B1330", price:1050, desc:"Dabu cotton three-piece set — straight-cut top with yoke & sleeve work (43in), straight pant (39in), Kota checks dupatta. Rs.1050 with free shipping.", category:"Cotton 3-Piece Sets", kind:"stitched", sizes:["M","L","XL","XXL","3XL"] },
+    { id:"p33", img:"assets/products/p33.jpg", title:"Blue Cotton 3-Piece Set D01", color:"Blue", hex:"#1B4F8C", price:1050, desc:"Dabu cotton three-piece set — straight-cut top with yoke & sleeve work (43in), straight pant (39in), Kota checks dupatta. Rs.1050 with free shipping.", category:"Cotton 3-Piece Sets", kind:"stitched", sizes:["M","L","XL","XXL","3XL"] },
+    { id:"p34", img:"assets/products/p34.jpg", title:"Gold Cotton 3-Piece Set D02", color:"Gold", hex:"#B8892B", price:1050, desc:"Dabu cotton three-piece set — straight-cut top with yoke & sleeve work (43in), straight pant (39in), Kota checks dupatta. Rs.1050 with free shipping.", category:"Cotton 3-Piece Sets", kind:"stitched", sizes:["M","L","XL","XXL","3XL"] },
+    { id:"p35", img:"assets/products/p35.jpg", title:"Green Cotton 3-Piece Set D01", color:"Green", hex:"#2F7A4F", price:1050, desc:"Dabu cotton three-piece set — straight-cut top with yoke & sleeve work (43in), straight pant (39in), Kota checks dupatta. Rs.1050 with free shipping.", category:"Cotton 3-Piece Sets", kind:"stitched", sizes:["M","L","XL","XXL","3XL"] },
+    { id:"p36", img:"assets/products/p36.jpg", title:"Blue Kurti 3-Piece Set D01", color:"Blue", hex:"#1B4F8C", price:350, desc:"Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.", category:"Kurti 3-Piece Sets", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p37", img:"assets/products/p37.jpg", title:"Gold Kurti 3-Piece Set D01", color:"Gold", hex:"#B8892B", price:350, desc:"Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.", category:"Kurti 3-Piece Sets", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p38", img:"assets/products/p38.jpg", title:"Maroon Kurti 3-Piece Set D01", color:"Maroon", hex:"#6B1330", price:350, desc:"Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.", category:"Kurti 3-Piece Sets", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p39", img:"assets/products/p39.jpg", title:"Teal Kurti 3-Piece Set D01", color:"Teal", hex:"#116A5C", price:350, desc:"Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.", category:"Kurti 3-Piece Sets", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p40", img:"assets/products/p40.jpg", title:"Maroon Kurti 3-Piece Set D02", color:"Maroon", hex:"#6B1330", price:350, desc:"Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.", category:"Kurti 3-Piece Sets", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p41", img:"assets/products/p41.jpg", title:"Green Kurti 3-Piece Set D01", color:"Green", hex:"#2F7A4F", price:350, desc:"Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.", category:"Kurti 3-Piece Sets", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p42", img:"assets/products/p42.jpg", title:"Pink Kurti 3-Piece Set D01", color:"Pink", hex:"#C21E6D", price:350, desc:"Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.", category:"Kurti 3-Piece Sets", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p43", img:"assets/products/p43.jpg", title:"Gold Kurti 3-Piece Set D02", color:"Gold", hex:"#B8892B", price:350, desc:"Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.", category:"Kurti 3-Piece Sets", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p44", img:"assets/products/p44.jpg", title:"Pink Kurti D01", color:"Pink", hex:"#C21E6D", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p45", img:"assets/products/p45.jpg", title:"Blue Kurti D01", color:"Blue", hex:"#1B4F8C", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p46", img:"assets/products/p46.jpg", title:"Blue Kurti D02", color:"Blue", hex:"#1B4F8C", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p47", img:"assets/products/p47.jpg", title:"Pink Kurti D02", color:"Pink", hex:"#C21E6D", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p48", img:"assets/products/p48.jpg", title:"Maroon Kurti D01", color:"Maroon", hex:"#6B1330", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p49", img:"assets/products/p49.jpg", title:"Green Kurti D01", color:"Green", hex:"#2F7A4F", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p50", img:"assets/products/p50.jpg", title:"Purple Kurti D01", color:"Purple", hex:"#4A1F5E", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p51", img:"assets/products/p51.jpg", title:"Maroon Kurti D02", color:"Maroon", hex:"#6B1330", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p52", img:"assets/products/p52.jpg", title:"Maroon Kurti D03", color:"Maroon", hex:"#6B1330", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p53", img:"assets/products/p53.jpg", title:"Gold Kurti D01", color:"Gold", hex:"#B8892B", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p54", img:"assets/products/p54.jpg", title:"Pink Kurti D03", color:"Pink", hex:"#C21E6D", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p55", img:"assets/products/p55.jpg", title:"Gold Kurti D02", color:"Gold", hex:"#B8892B", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p56", img:"assets/products/p56.jpg", title:"Teal Kurti D01", color:"Teal", hex:"#116A5C", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p57", img:"assets/products/p57.jpg", title:"Gold Kurti D03", color:"Gold", hex:"#B8892B", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p58", img:"assets/products/p58.jpg", title:"Purple Kurti D02", color:"Purple", hex:"#4A1F5E", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p59", img:"assets/products/p59.jpg", title:"Maroon Kurti D04", color:"Maroon", hex:"#6B1330", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p60", img:"assets/products/p60.jpg", title:"Black Kurti D01", color:"Black", hex:"#1c1c1c", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p61", img:"assets/products/p61.jpg", title:"Green Kurti D02", color:"Green", hex:"#2F7A4F", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p62", img:"assets/products/p62.jpg", title:"Purple Kurti D03", color:"Purple", hex:"#4A1F5E", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p63", img:"assets/products/p63.jpg", title:"Green Kurti D03", color:"Green", hex:"#2F7A4F", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p64", img:"assets/products/p64.jpg", title:"Pink Kurti D04", color:"Pink", hex:"#C21E6D", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p65", img:"assets/products/p65.jpg", title:"Teal Kurti D02", color:"Teal", hex:"#116A5C", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p66", img:"assets/products/p66.jpg", title:"Green Kurti D04", color:"Green", hex:"#2F7A4F", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p67", img:"assets/products/p67.jpg", title:"Maroon Kurti D05", color:"Maroon", hex:"#6B1330", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p68", img:"assets/products/p68.jpg", title:"Blue Kurti D03", color:"Blue", hex:"#1B4F8C", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p69", img:"assets/products/p69.jpg", title:"Gold Kurti D04", color:"Gold", hex:"#B8892B", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p70", img:"assets/products/p70.jpg", title:"Blue Kurti D04", color:"Blue", hex:"#1B4F8C", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p71", img:"assets/products/p71.jpg", title:"Gold Kurti D05", color:"Gold", hex:"#B8892B", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p72", img:"assets/products/p72.jpg", title:"Blue Kurti D05", color:"Blue", hex:"#1B4F8C", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p73", img:"assets/products/p73.jpg", title:"Blue Kurti D06", color:"Blue", hex:"#1B4F8C", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p74", img:"assets/products/p74.jpg", title:"Blue Kurti D07", color:"Blue", hex:"#1B4F8C", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p75", img:"assets/products/p75.jpg", title:"Maroon Kurti D06", color:"Maroon", hex:"#6B1330", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p76", img:"assets/products/p76.jpg", title:"Blue Kurti D08", color:"Blue", hex:"#1B4F8C", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p77", img:"assets/products/p77.jpg", title:"Gold Kurti D06", color:"Gold", hex:"#B8892B", price:350, desc:"Zorra TM showroom kurti — Avaasa size & fitting. Fabric: silk / cotton / rayon. MRP Rs.799, your price Rs.350 + shipping (Rs.60 for 1-3 pcs, free above 3).", category:"Kurtis", kind:"stitched", sizes:["S","M","L","XL","2XL"] },
+    { id:"p78", img:"assets/products/p78.jpg", title:"Gold Anarkali D01", color:"Gold", hex:"#B8892B", price:699, desc:"Rayon Anarkali, length 44-45in. Rs.699 + shipping. Book fast — limited stock.", category:"Anarkalis", kind:"stitched", sizes:["3XL","4XL","5XL"] },
+    { id:"p79", img:"assets/products/p79.jpg", title:"Gold Anarkali D02", color:"Gold", hex:"#B8892B", price:699, desc:"Rayon Anarkali, length 44-45in. Rs.699 + shipping. Book fast — limited stock.", category:"Anarkalis", kind:"stitched", sizes:["3XL","4XL","5XL"] },
+    { id:"p80", img:"assets/products/p80.jpg", title:"Gold Anarkali D03", color:"Gold", hex:"#B8892B", price:699, desc:"Rayon Anarkali, length 44-45in. Rs.699 + shipping. Book fast — limited stock.", category:"Anarkalis", kind:"stitched", sizes:["3XL","4XL","5XL"] },
+    { id:"p81", img:"assets/products/p81.jpg", title:"Maroon Anarkali D01", color:"Maroon", hex:"#6B1330", price:699, desc:"Rayon Anarkali, length 44-45in. Rs.699 + shipping. Book fast — limited stock.", category:"Anarkalis", kind:"stitched", sizes:["3XL","4XL","5XL"] },
+    { id:"p82", img:"assets/products/p82.jpg", title:"Black Wedding Saree D01", color:"Black", hex:"#1c1c1c", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p83", img:"assets/products/p83.jpg", title:"Gold Wedding Saree D01", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p84", img:"assets/products/p84.jpg", title:"Black Wedding Saree D02", color:"Black", hex:"#1c1c1c", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p85", img:"assets/products/p85.jpg", title:"Gold Wedding Saree D02", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p86", img:"assets/products/p86.jpg", title:"Gold Wedding Saree D03", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p87", img:"assets/products/p87.jpg", title:"Black Wedding Saree D03", color:"Black", hex:"#1c1c1c", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p88", img:"assets/products/p88.jpg", title:"Gold Wedding Saree D04", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p89", img:"assets/products/p89.jpg", title:"Black Wedding Saree D04", color:"Black", hex:"#1c1c1c", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p90", img:"assets/products/p90.jpg", title:"Gold Wedding Saree D05", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p91", img:"assets/products/p91.jpg", title:"Black Wedding Saree D05", color:"Black", hex:"#1c1c1c", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p92", img:"assets/products/p92.jpg", title:"Black Wedding Saree D06", color:"Black", hex:"#1c1c1c", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p93", img:"assets/products/p93.jpg", title:"Blue Wedding Saree D01", color:"Blue", hex:"#1B4F8C", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p94", img:"assets/products/p94.jpg", title:"Black Wedding Saree D07", color:"Black", hex:"#1c1c1c", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p95", img:"assets/products/p95.jpg", title:"Gold Wedding Saree D06", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p96", img:"assets/products/p96.jpg", title:"Gold Wedding Saree D07", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p97", img:"assets/products/p97.jpg", title:"Black Wedding Saree D08", color:"Black", hex:"#1c1c1c", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p98", img:"assets/products/p98.jpg", title:"Black Wedding Saree D09", color:"Black", hex:"#1c1c1c", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p99", img:"assets/products/p99.jpg", title:"Black Wedding Saree D10", color:"Black", hex:"#1c1c1c", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p100", img:"assets/products/p100.jpg", title:"Gold Wedding Saree D08", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p101", img:"assets/products/p101.jpg", title:"Gold Wedding Saree D09", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p102", img:"assets/products/p102.jpg", title:"Gold Wedding Saree D10", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p103", img:"assets/products/p103.jpg", title:"Black Wedding Saree D11", color:"Black", hex:"#1c1c1c", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p104", img:"assets/products/p104.jpg", title:"Blue Wedding Saree D02", color:"Blue", hex:"#1B4F8C", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p105", img:"assets/products/p105.jpg", title:"Maroon Wedding Saree D01", color:"Maroon", hex:"#6B1330", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p106", img:"assets/products/p106.jpg", title:"Gold Wedding Saree D11", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p107", img:"assets/products/p107.jpg", title:"Gold Wedding Saree D12", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p108", img:"assets/products/p108.jpg", title:"Gold Wedding Saree D13", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p109", img:"assets/products/p109.jpg", title:"Black Wedding Saree D12", color:"Black", hex:"#1c1c1c", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p110", img:"assets/products/p110.jpg", title:"Gold Wedding Saree D14", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
+    { id:"p111", img:"assets/products/p111.jpg", title:"Gold Wedding Saree D15", color:"Gold", hex:"#B8892B", price:1550, desc:"Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.", category:"Wedding Sarees", kind:"saree" },
 ];
-  // Mark a couple of pieces as sold out to demonstrate the state
-  FALLBACK_PRODUCTS.find(p=>p.id==="p02").soldOut = true;
-  FALLBACK_PRODUCTS.find(p=>p.id==="p15").soldOut = true;
+  // soldOut flags live in products.json and are baked into the array above by scripts/sync-fallback.mjs
 
   let PRODUCTS = FALLBACK_PRODUCTS;
   function refreshStats(){
     const totalStock = PRODUCTS.filter(p=>!p.soldOut).length;
     document.getElementById("heroStockCount").textContent = totalStock;
     document.getElementById("statStock").textContent = totalStock;
+    document.getElementById("collectionCount").textContent = PRODUCTS.length;
   }
 
   // ---------------- WHATSAPP LINKS ----------------
@@ -1705,7 +1795,29 @@
   const resultCountEl = document.getElementById("resultCount");
   const emptyState = document.getElementById("emptyState");
   const clearSearchBtn = document.getElementById("clearSearchBtn");
-let activeFilter = "All";
+  let activeFilter = "All";
+  let activeCategory = "All";
+  const catFiltersEl = document.getElementById("catFilters");
+  const CATEGORY_ORDER = ["Soft Silk Sarees","Wedding Sarees","Co-ord Sets","Cotton 3-Piece Sets","Kurti 3-Piece Sets","Kurtis","Anarkalis"];
+
+  function renderCatFilters(){
+    const counts = {};
+    PRODUCTS.forEach(p=>{ const c = p.category||"Other"; counts[c]=(counts[c]||0)+1; });
+    const present = CATEGORY_ORDER.filter(c=>counts[c]).concat(
+      Object.keys(counts).filter(c=>CATEGORY_ORDER.indexOf(c)===-1).sort()
+    );
+    catFiltersEl.innerHTML = ["All",...present].map(c=>{
+      const n = c==="All" ? PRODUCTS.length : (counts[c]||0);
+      return `<button class="chip ${c===activeCategory?'active':''}" data-cat="${c}">${c} · ${n}</button>`;
+    }).join("");
+    catFiltersEl.querySelectorAll(".chip").forEach(btn=>{
+      btn.addEventListener("click", ()=>{
+        activeCategory = btn.dataset.cat;
+        renderCatFilters();
+        renderGrid();
+      });
+    });
+  }
 
   refreshStats();
 
@@ -1728,9 +1840,10 @@ let activeFilter = "All";
 
   function getFilteredList(){
     let list = activeFilter==="All" ? [...PRODUCTS] : PRODUCTS.filter(p=>p.color===activeFilter);
+    if(activeCategory!=="All") list = list.filter(p=>(p.category||"")===activeCategory);
     const q = searchInput.value.trim().toLowerCase();
     if(q){
-      list = list.filter(p=> p.title.toLowerCase().includes(q) || p.color.toLowerCase().includes(q));
+      list = list.filter(p=> p.title.toLowerCase().includes(q) || p.color.toLowerCase().includes(q) || (p.category||"").toLowerCase().includes(q));
     }
     const sortVal = sortSelect.value;
     if(sortVal==="price-asc") list.sort((a,b)=>a.price-b.price);
@@ -1754,7 +1867,7 @@ let activeFilter = "All";
           <div class="card-body">
             <h3>${p.title}</h3>
             <div class="card-meta">
-              <span>${p.color} · Soft Silk</span>
+              <span>${p.kind==="stitched" ? p.color+" · "+(p.category||"Stitched Wear") : p.color+" · Soft Silk"}</span>
               <span class="card-price">₹${p.price}+</span>
             </div>
             <button class="card-cta ${sold?'sold-out':''}" data-open="${p.id}">
@@ -1777,7 +1890,9 @@ let activeFilter = "All";
   clearSearchBtn.addEventListener("click", ()=>{
     searchInput.value = "";
     activeFilter = "All";
+    activeCategory = "All";
     renderFilters();
+    renderCatFilters();
     renderGrid();
   });
 
@@ -1823,7 +1938,8 @@ let activeFilter = "All";
     } else {
       qvWaBtn.style.display = "inline-flex";
       qvNotifyBtn.style.display = "none";
-      const msg = `Hi! I'm interested in the ${p.title} (Ref: ${p.id.toUpperCase()}) from ${SHOP_NAME}. Qty: ${qvQty}, Size: ${qvSizeSel.value}, Sleeve: ${qvSleeveSel.value}. Is it still in stock?`;
+      const fit = p.kind==="stitched" ? `Qty: ${qvQty}, Size: ${qvSizeSel.value}` : `Qty: ${qvQty}, Size: ${qvSizeSel.value}, Sleeve: ${qvSleeveSel.value}`;
+      const msg = `Hi! I'm interested in the ${p.title} (Ref: ${p.id.toUpperCase()}) from ${SHOP_NAME}. ${fit}. Is it still in stock?`;
       qvWaBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
     }
   }
@@ -1837,8 +1953,12 @@ let activeFilter = "All";
     qvTag.textContent = p.soldOut ? "✕ Sold Out" : "✓ Ready Stock";
     qvTag.style.color = p.soldOut ? "var(--maroon)" : "var(--teal-deep)";
     qvTag.style.borderColor = p.soldOut ? "var(--maroon)" : "var(--teal)";
-    qvPrice.textContent = `₹${p.price}+ · with blouse piece`;
+    qvPrice.textContent = p.kind==="stitched" ? `₹${p.price}+` : `₹${p.price}+ · with blouse piece`;
     qvDesc.textContent = p.desc;
+    var sizeOpts = (p.sizes && p.sizes.length) ? p.sizes : ["Free size (standard 5.5 m)", "Extra long (5.8 m)"];
+    qvSizeSel.innerHTML = sizeOpts.map(function(s){ return `<option value="${s}">${s}</option>`; }).join("");
+    document.getElementById("qvSizeLabel").textContent = p.kind==="stitched" ? "Size" : "Belly / blouse size";
+    document.getElementById("qvSleeveField").style.display = p.kind==="stitched" ? "none" : "";
     refreshQvWa();
   }
 
@@ -2002,6 +2122,7 @@ let activeFilter = "All";
   }
 
   renderFilters();
+  renderCatFilters();
   renderGrid();
 
   // Live product sources, in priority order — each step fails silently so

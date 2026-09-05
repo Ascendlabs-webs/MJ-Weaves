@@ -45,6 +45,32 @@ export default defineType({
       validation: (r) => r.required().min(0),
     }),
     defineField({
+      name: 'category',
+      title: 'Category',
+      type: 'string',
+      description: 'e.g. Soft Silk Sarees, Wedding Sarees, Kurtis, Anarkalis, Co-ord Sets',
+    }),
+    defineField({
+      name: 'kind',
+      title: 'Kind',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'Saree', value: 'saree'},
+          {title: 'Stitched wear', value: 'stitched'},
+        ],
+        layout: 'radio',
+      },
+      initialValue: 'saree',
+    }),
+    defineField({
+      name: 'sizes',
+      title: 'Sizes',
+      type: 'array',
+      description: 'For stitched wear, e.g. S, M, L, XL, 2XL. Leave empty for free-size sarees.',
+      of: [{type: 'string'}],
+    }),
+    defineField({
       name: 'description',
       title: 'Description',
       type: 'text',

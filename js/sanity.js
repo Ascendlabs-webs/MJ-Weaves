@@ -47,13 +47,16 @@
       hex: doc.shadeHex || "#B8892B",
       price: doc.price,
       desc: doc.description || "",
+      category: doc.category || "",
+      kind: doc.kind || "saree",
+      sizes: doc.sizes && doc.sizes.length ? doc.sizes : undefined,
       // 'held' also shows the sold-out badge (matches current storefront behaviour)
       soldOut: doc.status ? doc.status !== "in-stock" : !!doc.soldOut,
     };
   }
 
   var QUERY = encodeURIComponent(
-    '*[_type == "product"]{code, name, shade, shadeHex, price, description, status, featured, ' +
+    '*[_type == "product"]{code, name, shade, shadeHex, price, description, status, featured, category, kind, sizes, ' +
     '"photoRef": photo.asset._ref, photoUrl, legacyImg, soldOut} | order(featured desc, code asc)'
   );
 

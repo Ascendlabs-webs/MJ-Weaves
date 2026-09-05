@@ -133,6 +133,9 @@ for (const p of products) {
       description: p.desc || '',
       status: p.soldOut ? 'sold-out' : 'in-stock',
       featured: false,
+      category: p.category || '',
+      kind: p.kind || 'saree',
+      ...(p.sizes && p.sizes.length ? {sizes: p.sizes} : {}),
     },
   });
 }
