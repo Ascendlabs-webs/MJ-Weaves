@@ -167,6 +167,23 @@
   .img-pick .file-hint{font-size:11px; letter-spacing:normal; text-transform:none; color:#8a7a6c;}
   .modal-actions{display:flex; gap:12px; justify-content:flex-end; margin-top:24px;}
   @media (max-width:760px){ .form-grid{grid-template-columns:1fr;} .img-row{flex-direction:column; align-items:flex-start;} }
+
+  /* ---------- Mobile polish ---------- */
+  a, button{ -webkit-tap-highlight-color: transparent; }
+  body{ overflow-x:clip; }
+  @media (max-width:760px){
+    /* 16px inputs stop iOS Safari auto-zoom on focus */
+    .fields input, .form-grid input, .form-grid textarea, .form-grid select{ font-size:16px; }
+    .modal-back{ padding:20px 12px; }
+    .modal{ padding:24px 20px; }
+    .toolbar .btn{ padding:10px 14px; font-size:11.5px; }
+  }
+  @media (max-width:560px){
+    .fields{ grid-template-columns:1fr; }
+    .panel{ padding:20px; }
+    .prow{ gap:8px; padding:10px 12px; }
+    .ptitle{ font-size:13px; }
+  }
 </style>
 </head>
 <body>
