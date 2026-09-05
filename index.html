@@ -609,10 +609,13 @@
     font-weight:600;
   }
   .ship-note{
-    font-size:11px;
-    color:#8a7a6c;
-    letter-spacing:0.02em;
+    font-size:11.5px;
+    font-weight:500;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    color:var(--teal-deep);
   }
+  .ship-note.free{ color:var(--wa); }
   .card-cta{
     margin-top:auto;
     display:flex; align-items:center; justify-content:center; gap:8px;
@@ -946,7 +949,8 @@
     font-family:'Cinzel', serif;
     font-size:17px; color:var(--rose); font-weight:600;
   }
-  .qv-ship{ font-size:12.5px; color:#7a6a5c; }
+  .qv-ship{ font-size:13px; font-weight:500; letter-spacing:0.04em; text-transform:uppercase; color:var(--teal-deep); }
+  .qv-ship.free{ color:var(--wa); }
   .qv-side .qv-desc{
     font-family:'Cormorant Garamond', serif;
     font-size:17px; line-height:1.55; color:#4a3c33;
@@ -1877,7 +1881,7 @@
               <span>${p.kind==="stitched" ? p.color+" · "+(p.category||"Stitched Wear") : p.color+" · Soft Silk"}</span>
               <span class="card-price">₹${p.price}</span>
             </div>
-            ${p.shipping ? `<span class="ship-note">${p.shipping}</span>` : ""}
+            ${p.shipping ? `<span class="ship-note${p.shipping==="Free shipping"?" free":""}">${p.shipping}</span>` : ""}
             <button class="card-cta ${sold?'sold-out':''}" data-open="${p.id}">
               ${sold
                 ? 'Notify Me'
@@ -1964,6 +1968,7 @@
     qvPrice.textContent = p.kind==="stitched" ? `₹${p.price}` : `₹${p.price} · with blouse piece`;
     var qvShip = document.getElementById("qvShip");
     qvShip.textContent = p.shipping || "";
+    qvShip.className = "qv-ship" + (p.shipping==="Free shipping" ? " free" : "");
     qvShip.style.display = p.shipping ? "" : "none";
     qvDesc.textContent = p.desc;
     var sizeOpts = (p.sizes && p.sizes.length) ? p.sizes : ["Free size (standard 5.5 m)", "Extra long (5.8 m)"];
