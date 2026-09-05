@@ -71,6 +71,12 @@ export default defineType({
       of: [{type: 'string'}],
     }),
     defineField({
+      name: 'shipping',
+      title: 'Shipping note',
+      type: 'string',
+      description: 'Shown beside the price, e.g. + shipping cost, Free shipping',
+    }),
+    defineField({
       name: 'description',
       title: 'Description',
       type: 'text',

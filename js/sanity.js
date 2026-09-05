@@ -50,13 +50,14 @@
       category: doc.category || "",
       kind: doc.kind || "saree",
       sizes: doc.sizes && doc.sizes.length ? doc.sizes : undefined,
+      shipping: doc.shipping || undefined,
       // 'held' also shows the sold-out badge (matches current storefront behaviour)
       soldOut: doc.status ? doc.status !== "in-stock" : !!doc.soldOut,
     };
   }
 
   var QUERY = encodeURIComponent(
-    '*[_type == "product"]{code, name, shade, shadeHex, price, description, status, featured, category, kind, sizes, ' +
+    '*[_type == "product"]{code, name, shade, shadeHex, price, description, status, featured, category, kind, sizes, shipping, ' +
     '"photoRef": photo.asset._ref, photoUrl, legacyImg, soldOut} | order(featured desc, code asc)'
   );
 

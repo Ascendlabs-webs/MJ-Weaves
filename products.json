@@ -8,7 +8,8 @@
     "price": 850,
     "desc": "A deep emerald body with copper zari buttas and a blush pink contrast pallu — a quiet, regal drape for day functions.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p02",
@@ -20,7 +21,8 @@
     "desc": "A classic rani pink with a heavier grand pallu — celebratory without being loud, made for poojas and sangeet evenings.",
     "soldOut": true,
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p03",
@@ -31,7 +33,8 @@
     "price": 850,
     "desc": "Royal violet silk with copper zari that catches light as you move. One of the most requested shades this season.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p04",
@@ -42,7 +45,8 @@
     "price": 850,
     "desc": "Peacock blue with a contrasting gold-edged pallu. A full-day weave — temple in the morning, reception by evening.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p05",
@@ -53,7 +57,8 @@
     "price": 850,
     "desc": "Deep amethyst folded over itself — flatlay perfection. Copper zari border detail that stays crisp in photos.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p06",
@@ -64,7 +69,8 @@
     "price": 850,
     "desc": "Sky blue lightness in soft silk, with a zari pallu that gives it enough weight to fall beautifully.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p07",
@@ -75,7 +81,8 @@
     "price": 850,
     "desc": "Meadow green with copper buttas — a fresh shade that photographs rich under temple and hall lighting alike.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p08",
@@ -86,7 +93,8 @@
     "price": 850,
     "desc": "Bottle green depth with a contrast zari pallu. Understated at first glance, unmistakable up close.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p09",
@@ -97,7 +105,8 @@
     "price": 850,
     "desc": "Amethyst with gold zari accents — the mix warms the purple and makes the drape glow at dusk.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p10",
@@ -108,7 +117,8 @@
     "price": 850,
     "desc": "Indigo violet, deep as a night sky, with woven zari that picks up every bit of light.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p11",
@@ -119,7 +129,8 @@
     "price": 850,
     "desc": "Maroon with a blush contrast pallu — a festive classic that needs no accessorising.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p12",
@@ -130,7 +141,8 @@
     "price": 850,
     "desc": "Midnight black with rose-toned zari — a cocktail-hour drape with a quiet drama.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p13",
@@ -141,7 +153,8 @@
     "price": 850,
     "desc": "Cerulean blue against copper zari — a pairing that reads elegant in person and even better on camera.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p14",
@@ -152,7 +165,8 @@
     "price": 850,
     "desc": "Mustard gold with maroon borders — an autumn palette woven for pongal mornings and evening poojas.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p15",
@@ -164,7 +178,8 @@
     "desc": "Antique gold throughout — the saree equivalent of jewellery, best worn with the simplest blouse.",
     "soldOut": true,
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p16",
@@ -175,7 +190,8 @@
     "price": 850,
     "desc": "Navy with silver-touched zari — cool-toned and grounding, a safe bet for formal evenings.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p17",
@@ -186,7 +202,8 @@
     "price": 850,
     "desc": "Grape meeting teal in the body, with a grand zari pallu holding the composition together.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p18",
@@ -197,7 +214,8 @@
     "price": 850,
     "desc": "Blush pink with noir borders — soft and modern, ideal for a daytime engagement or a mehndi.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p19",
@@ -208,7 +226,8 @@
     "price": 850,
     "desc": "Wine and violet in one drape — a moody shade flattering under evening lights.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p20",
@@ -219,7 +238,8 @@
     "price": 850,
     "desc": "Citrus lime for the brave — bright, joyful and guaranteed to stand out in a sea of reds and pinks.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p21",
@@ -230,7 +250,8 @@
     "price": 850,
     "desc": "Lilac softened by grey — a quiet, elegant shade that works for parties and poojas alike.",
     "category": "Soft Silk Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p22",
@@ -241,7 +262,8 @@
     "price": 1550,
     "desc": "Fancy design and fancy models..🌹*\n\n*🌹Bady all over grand colour full Jari buttas🌹*\n\n*🌹Contrast border & pallu & blouse..🌹1550",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p23",
@@ -259,7 +281,8 @@
       "XL",
       "XXL",
       "3XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p24",
@@ -277,7 +300,8 @@
       "XL",
       "XXL",
       "3XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p25",
@@ -295,7 +319,8 @@
       "XL",
       "XXL",
       "3XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p26",
@@ -313,7 +338,8 @@
       "XL",
       "XXL",
       "3XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p27",
@@ -331,7 +357,8 @@
       "XL",
       "XXL",
       "3XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p28",
@@ -349,7 +376,8 @@
       "XL",
       "XXL",
       "3XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p29",
@@ -367,7 +395,8 @@
       "XL",
       "XXL",
       "3XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p30",
@@ -385,7 +414,8 @@
       "XL",
       "XXL",
       "3XL"
-    ]
+    ],
+    "shipping": "Free shipping"
   },
   {
     "id": "p31",
@@ -403,7 +433,8 @@
       "XL",
       "XXL",
       "3XL"
-    ]
+    ],
+    "shipping": "Free shipping"
   },
   {
     "id": "p32",
@@ -421,7 +452,8 @@
       "XL",
       "XXL",
       "3XL"
-    ]
+    ],
+    "shipping": "Free shipping"
   },
   {
     "id": "p33",
@@ -439,7 +471,8 @@
       "XL",
       "XXL",
       "3XL"
-    ]
+    ],
+    "shipping": "Free shipping"
   },
   {
     "id": "p34",
@@ -457,7 +490,8 @@
       "XL",
       "XXL",
       "3XL"
-    ]
+    ],
+    "shipping": "Free shipping"
   },
   {
     "id": "p35",
@@ -475,7 +509,8 @@
       "XL",
       "XXL",
       "3XL"
-    ]
+    ],
+    "shipping": "Free shipping"
   },
   {
     "id": "p36",
@@ -493,7 +528,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p37",
@@ -511,7 +547,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p38",
@@ -529,7 +566,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p39",
@@ -547,7 +585,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p40",
@@ -565,7 +604,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p41",
@@ -583,7 +623,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p42",
@@ -601,7 +642,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p43",
@@ -619,7 +661,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p44",
@@ -637,7 +680,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p45",
@@ -655,7 +699,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p46",
@@ -673,7 +718,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p47",
@@ -691,7 +737,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p48",
@@ -709,7 +756,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p49",
@@ -727,7 +775,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p50",
@@ -745,7 +794,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p51",
@@ -763,7 +813,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p52",
@@ -781,7 +832,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p53",
@@ -799,7 +851,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p54",
@@ -817,7 +870,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p55",
@@ -835,7 +889,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p56",
@@ -853,7 +908,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p57",
@@ -871,7 +927,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p58",
@@ -889,7 +946,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p59",
@@ -907,7 +965,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p60",
@@ -925,7 +984,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p61",
@@ -943,7 +1003,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p62",
@@ -961,7 +1022,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p63",
@@ -979,7 +1041,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p64",
@@ -997,7 +1060,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p65",
@@ -1015,7 +1079,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p66",
@@ -1033,7 +1098,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p67",
@@ -1051,7 +1117,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p68",
@@ -1069,7 +1136,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p69",
@@ -1087,7 +1155,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p70",
@@ -1105,7 +1174,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p71",
@@ -1123,7 +1193,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p72",
@@ -1141,7 +1212,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p73",
@@ -1159,7 +1231,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p74",
@@ -1177,7 +1250,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p75",
@@ -1195,7 +1269,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p76",
@@ -1213,7 +1288,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p77",
@@ -1231,7 +1307,8 @@
       "L",
       "XL",
       "2XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p78",
@@ -1247,7 +1324,8 @@
       "3XL",
       "4XL",
       "5XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p79",
@@ -1263,7 +1341,8 @@
       "3XL",
       "4XL",
       "5XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p80",
@@ -1279,7 +1358,8 @@
       "3XL",
       "4XL",
       "5XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p81",
@@ -1295,7 +1375,8 @@
       "3XL",
       "4XL",
       "5XL"
-    ]
+    ],
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p82",
@@ -1306,7 +1387,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p83",
@@ -1317,7 +1399,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p84",
@@ -1328,7 +1411,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p85",
@@ -1339,7 +1423,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p86",
@@ -1350,7 +1435,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p87",
@@ -1361,7 +1447,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p88",
@@ -1372,7 +1459,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p89",
@@ -1383,7 +1471,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p90",
@@ -1394,7 +1483,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p91",
@@ -1405,7 +1495,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p92",
@@ -1416,7 +1507,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p93",
@@ -1427,7 +1519,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p94",
@@ -1438,7 +1531,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p95",
@@ -1449,7 +1543,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p96",
@@ -1460,7 +1555,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p97",
@@ -1471,7 +1567,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p98",
@@ -1482,7 +1579,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p99",
@@ -1493,7 +1591,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p100",
@@ -1504,7 +1603,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p101",
@@ -1515,7 +1615,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p102",
@@ -1526,7 +1627,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p103",
@@ -1537,7 +1639,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p104",
@@ -1548,7 +1651,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p105",
@@ -1559,7 +1663,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p106",
@@ -1570,7 +1675,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p107",
@@ -1581,7 +1687,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p108",
@@ -1592,7 +1699,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p109",
@@ -1603,7 +1711,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p110",
@@ -1614,7 +1723,8 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   },
   {
     "id": "p111",
@@ -1625,6 +1735,7 @@
     "price": 1550,
     "desc": "Special samuthrika & vasthrakala type wedding model saree — fancy design with all-over grand colour zari buttas, contrast border, pallu & blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
-    "kind": "saree"
+    "kind": "saree",
+    "shipping": "+ shipping cost"
   }
 ]

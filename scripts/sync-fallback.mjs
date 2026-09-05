@@ -24,6 +24,7 @@ const esc = (s) =>
 const line = (p) => {
   let s = `    { id:"${p.id}", img:"${p.img}", title:"${esc(p.title)}", color:"${p.color}", hex:"${p.hex}", price:${p.price}, desc:"${esc(p.desc)}", category:"${esc(p.category || '')}", kind:"${p.kind || 'saree'}"`;
   if (p.sizes && p.sizes.length) s += `, sizes:[${p.sizes.map((x) => `"${esc(x)}"`).join(',')}]`;
+  if (p.shipping) s += `, shipping:"${esc(p.shipping)}"`;
   if (p.soldOut) s += ', soldOut:true';
   return s + ' },';
 };

@@ -136,6 +136,7 @@ for (const p of products) {
       category: p.category || '',
       kind: p.kind || 'saree',
       ...(p.sizes && p.sizes.length ? {sizes: p.sizes} : {}),
+      ...(p.shipping ? {shipping: p.shipping} : {}),
     },
   });
 }
