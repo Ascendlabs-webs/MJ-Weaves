@@ -24,7 +24,9 @@
 
   .topbar{background:var(--ink); color:var(--ivory); padding:14px 0;}
   .topbar .wrap{display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;}
-  .brand{display:flex; flex-direction:column; line-height:1;}
+  .brand{display:flex; flex-direction:row; align-items:center; gap:12px; line-height:1;}
+  .brand-text{display:flex; flex-direction:column; line-height:1;}
+  .brand-logo{width:42px; height:42px; object-fit:cover; flex:none; border-radius:50%; border:1px solid var(--gold); background:var(--ivory-deep);}
   .brand .name{font-size:18px; letter-spacing:0.06em; color:var(--ivory);}
   .brand .sub{font-family:'Cormorant Garamond',serif; font-style:italic; color:var(--gold-bright); font-size:12.5px; margin-top:3px;}
   .conn{display:flex; align-items:center; gap:10px; font-size:12.5px; letter-spacing:0.05em; text-transform:uppercase; color:#b9ac9d;}
@@ -172,8 +174,11 @@
 <div class="topbar">
   <div class="wrap">
     <div class="brand">
+      <img class="brand-logo" src="assets/logo-512.png" alt="Keerthi Fashions logo">
+      <div class="brand-text">
       <span class="name">KEERTHI FASHIONS</span>
       <span class="sub">storefront admin</span>
+      </div>
     </div>
     <div class="conn" id="connStatus"><span class="dot"></span><span id="connLabel">Not connected</span></div>
   </div>
