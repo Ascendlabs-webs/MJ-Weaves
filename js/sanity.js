@@ -73,7 +73,12 @@
       .then(function (j) {
         var docs = ((j && j.result) || []).filter(function (d) { return d && d.code && d.name; });
         if (!docs.length) throw new Error("sanity: no products published");
-        return docs.map(mapProduct);
+        return docs.map(mapProduct).sort(function (a, b) {
+          // numeric code order (p2 < p10 < p100), matching products.json
+          var na = parseInt(String(a.id).replace(/\D/g, ""), 10) || 0;
+          var nb = parseInt(String(b.id).replace(/\D/g, ""), 10) || 0;
+          return na - nb;
+        });
       });
   }
 
