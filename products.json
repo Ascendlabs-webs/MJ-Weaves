@@ -13,7 +13,7 @@
   },
   {
     "id": "p02",
-    "img": "assets/products/p02.jpg",
+    "img": "assets/products/p02.webp",
     "title": "Rani Pink Kanjivaram",
     "color": "Pink",
     "hex": "#C21E6D",
@@ -26,7 +26,7 @@
   },
   {
     "id": "p03",
-    "img": "assets/products/p03.jpg",
+    "img": "assets/products/p03.webp",
     "title": "Royal Violet Kanjivaram",
     "color": "Purple",
     "hex": "#4A1F5E",
@@ -38,7 +38,7 @@
   },
   {
     "id": "p04",
-    "img": "assets/products/p04.jpg",
+    "img": "assets/products/p04.webp",
     "title": "Peacock Blue Kanjivaram",
     "color": "Blue",
     "hex": "#1B4F8C",
@@ -50,7 +50,7 @@
   },
   {
     "id": "p05",
-    "img": "assets/products/p05.jpg",
+    "img": "assets/products/p05.webp",
     "title": "Deep Amethyst Kanjivaram",
     "color": "Purple",
     "hex": "#4A1F5E",
@@ -62,7 +62,7 @@
   },
   {
     "id": "p06",
-    "img": "assets/products/p06.jpg",
+    "img": "assets/products/p06.webp",
     "title": "Sky Blue Kanjivaram",
     "color": "Blue",
     "hex": "#1B4F8C",
@@ -74,7 +74,7 @@
   },
   {
     "id": "p07",
-    "img": "assets/products/p07.jpg",
+    "img": "assets/products/p07.webp",
     "title": "Meadow Green Kanjivaram",
     "color": "Green",
     "hex": "#2F7A4F",
@@ -86,7 +86,7 @@
   },
   {
     "id": "p08",
-    "img": "assets/products/p08.jpg",
+    "img": "assets/products/p08.webp",
     "title": "Bottle Green Kanjivaram",
     "color": "Green",
     "hex": "#2F7A4F",
@@ -98,7 +98,7 @@
   },
   {
     "id": "p09",
-    "img": "assets/products/p09.jpg",
+    "img": "assets/products/p09.webp",
     "title": "Amethyst Gold Kanjivaram",
     "color": "Purple",
     "hex": "#4A1F5E",
@@ -110,7 +110,7 @@
   },
   {
     "id": "p10",
-    "img": "assets/products/p10.jpg",
+    "img": "assets/products/p10.webp",
     "title": "Indigo Violet Kanjivaram",
     "color": "Purple",
     "hex": "#4A1F5E",
@@ -122,7 +122,7 @@
   },
   {
     "id": "p11",
-    "img": "assets/products/p11.jpg",
+    "img": "assets/products/p11.webp",
     "title": "Maroon Blush Kanjivaram",
     "color": "Maroon",
     "hex": "#6B1330",
@@ -134,7 +134,7 @@
   },
   {
     "id": "p12",
-    "img": "assets/products/p12.jpg",
+    "img": "assets/products/p12.webp",
     "title": "Midnight Rose Kanjivaram",
     "color": "Black",
     "hex": "#1c1c1c",
@@ -146,7 +146,7 @@
   },
   {
     "id": "p13",
-    "img": "assets/products/p13.jpg",
+    "img": "assets/products/p13.webp",
     "title": "Cerulean Copper Kanjivaram",
     "color": "Blue",
     "hex": "#1B4F8C",
@@ -158,7 +158,7 @@
   },
   {
     "id": "p14",
-    "img": "assets/products/p14.jpg",
+    "img": "assets/products/p14.webp",
     "title": "Mustard Maroon Kanjivaram",
     "color": "Gold",
     "hex": "#B8892B",
@@ -170,7 +170,7 @@
   },
   {
     "id": "p15",
-    "img": "assets/products/p15.jpg",
+    "img": "assets/products/p15.webp",
     "title": "Antique Gold Kanjivaram",
     "color": "Gold",
     "hex": "#B8892B",
@@ -183,7 +183,7 @@
   },
   {
     "id": "p16",
-    "img": "assets/products/p16.jpg",
+    "img": "assets/products/p16.webp",
     "title": "Navy Zari Kanjivaram",
     "color": "Blue",
     "hex": "#1B4F8C",
@@ -195,7 +195,7 @@
   },
   {
     "id": "p17",
-    "img": "assets/products/p17.jpg",
+    "img": "assets/products/p17.webp",
     "title": "Grape Teal Kanjivaram",
     "color": "Purple",
     "hex": "#4A1F5E",
@@ -207,7 +207,7 @@
   },
   {
     "id": "p18",
-    "img": "assets/products/p18.jpg",
+    "img": "assets/products/p18.webp",
     "title": "Blush Noir Kanjivaram",
     "color": "Pink",
     "hex": "#C21E6D",
@@ -219,7 +219,7 @@
   },
   {
     "id": "p19",
-    "img": "assets/products/p19.jpg",
+    "img": "assets/products/p19.webp",
     "title": "Wine Violet Kanjivaram",
     "color": "Maroon",
     "hex": "#6B1330",
@@ -231,7 +231,7 @@
   },
   {
     "id": "p20",
-    "img": "assets/products/p20.jpg",
+    "img": "assets/products/p20.webp",
     "title": "Citrus Lime Kanjivaram",
     "color": "Green",
     "hex": "#2F7A4F",
@@ -243,7 +243,7 @@
   },
   {
     "id": "p21",
-    "img": "assets/products/p21.jpg",
+    "img": "assets/products/p21.webp",
     "title": "Lilac Grey Kanjivaram",
     "color": "Purple",
     "hex": "#4A1F5E",
@@ -255,24 +255,24 @@
   },
   {
     "id": "p22",
-    "img": "assets/products/p22.jpg",
-    "title": "samuthrika & vasthrakala type wedding model",
+    "img": "assets/products/p22.webp",
+    "title": "Samuthrika Vasthrakala Wedding Kanjivaram",
     "color": "Blue",
     "hex": "#0000ff",
     "price": 1550,
-    "desc": "Fancy design and fancy models..🌹*\n\n*🌹Bady all over grand colour full Jari buttas🌹*\n\n*🌹Contrast border & pallu & blouse..🌹1550",
+    "desc": "Samuthrika and Vasthrakala style wedding Kanjivaram in blue — grand all-over zari buttas with contrast border, pallu and blouse. Rs.1550 + shipping.",
     "category": "Wedding Sarees",
     "kind": "saree",
     "shipping": "+ shipping cost"
   },
   {
     "id": "p23",
-    "img": "assets/products/p23.jpg",
+    "img": "assets/products/p23.webp",
     "title": "Teal Co-ord Set D01",
     "color": "Teal",
     "hex": "#116A5C",
     "price": 599,
-    "desc": "Berlin cords / Vatican silk co-ord set. Top length 43in, bottom 39in. Stock clearance sale — Rs.599 + shipping.",
+    "desc": "Teal Vatican-silk co-ord set with a clean straight silhouette — 43in top, 39in bottom. Clearance at Rs.599 + shipping.",
     "category": "Co-ord Sets",
     "kind": "stitched",
     "sizes": [
@@ -286,12 +286,12 @@
   },
   {
     "id": "p24",
-    "img": "assets/products/p24.jpg",
+    "img": "assets/products/p24.webp",
     "title": "Pink Co-ord Set D01",
     "color": "Pink",
     "hex": "#C21E6D",
     "price": 599,
-    "desc": "Berlin cords / Vatican silk co-ord set. Top length 43in, bottom 39in. Stock clearance sale — Rs.599 + shipping.",
+    "desc": "Soft-pink Vatican-silk co-ord set with an easy day-wear fall — 43in top, 39in bottom. Clearance Rs.599 + shipping.",
     "category": "Co-ord Sets",
     "kind": "stitched",
     "sizes": [
@@ -305,12 +305,12 @@
   },
   {
     "id": "p25",
-    "img": "assets/products/p25.jpg",
+    "img": "assets/products/p25.webp",
     "title": "Pink Co-ord Set D02",
     "color": "Pink",
     "hex": "#C21E6D",
     "price": 599,
-    "desc": "Berlin cords / Vatican silk co-ord set. Top length 43in, bottom 39in. Stock clearance sale — Rs.599 + shipping.",
+    "desc": "A deeper pink take on the Vatican-silk co-ord — same 43in top and 39in bottom, made for travel days. Clearance Rs.599 + shipping.",
     "category": "Co-ord Sets",
     "kind": "stitched",
     "sizes": [
@@ -324,12 +324,12 @@
   },
   {
     "id": "p26",
-    "img": "assets/products/p26.jpg",
+    "img": "assets/products/p26.webp",
     "title": "Green Co-ord Set D01",
     "color": "Green",
     "hex": "#2F7A4F",
     "price": 599,
-    "desc": "Berlin cords / Vatican silk co-ord set. Top length 43in, bottom 39in. Stock clearance sale — Rs.599 + shipping.",
+    "desc": "Fresh-green Vatican-silk co-ord set that dresses up with gold jewellery — 43in top, 39in bottom. Clearance Rs.599 + shipping.",
     "category": "Co-ord Sets",
     "kind": "stitched",
     "sizes": [
@@ -343,12 +343,12 @@
   },
   {
     "id": "p27",
-    "img": "assets/products/p27.jpg",
+    "img": "assets/products/p27.webp",
     "title": "Maroon Co-ord Set D01",
     "color": "Maroon",
     "hex": "#6B1330",
     "price": 599,
-    "desc": "Berlin cords / Vatican silk co-ord set. Top length 43in, bottom 39in. Stock clearance sale — Rs.599 + shipping.",
+    "desc": "Rich maroon Vatican-silk co-ord set, festive without trying — 43in top, 39in bottom. Clearance Rs.599 + shipping.",
     "category": "Co-ord Sets",
     "kind": "stitched",
     "sizes": [
@@ -362,12 +362,12 @@
   },
   {
     "id": "p28",
-    "img": "assets/products/p28.jpg",
+    "img": "assets/products/p28.webp",
     "title": "Pink Co-ord Set D03",
     "color": "Pink",
     "hex": "#C21E6D",
     "price": 599,
-    "desc": "Berlin cords / Vatican silk co-ord set. Top length 43in, bottom 39in. Stock clearance sale — Rs.599 + shipping.",
+    "desc": "Third pink colourway of the Vatican-silk co-ord in a warmer undertone — 43in top, 39in bottom. Clearance Rs.599 + shipping.",
     "category": "Co-ord Sets",
     "kind": "stitched",
     "sizes": [
@@ -381,12 +381,12 @@
   },
   {
     "id": "p29",
-    "img": "assets/products/p29.jpg",
+    "img": "assets/products/p29.webp",
     "title": "Blue Co-ord Set D01",
     "color": "Blue",
     "hex": "#1B4F8C",
     "price": 599,
-    "desc": "Berlin cords / Vatican silk co-ord set. Top length 43in, bottom 39in. Stock clearance sale — Rs.599 + shipping.",
+    "desc": "Classic blue Vatican-silk co-ord set, the workhorse of the rack — 43in top, 39in bottom. Clearance Rs.599 + shipping.",
     "category": "Co-ord Sets",
     "kind": "stitched",
     "sizes": [
@@ -400,12 +400,12 @@
   },
   {
     "id": "p30",
-    "img": "assets/products/p30.jpg",
+    "img": "assets/products/p30.webp",
     "title": "Pink Cotton 3-Piece Set D01",
     "color": "Pink",
     "hex": "#C21E6D",
     "price": 1050,
-    "desc": "Dabu cotton three-piece set — straight-cut top with yoke & sleeve work (43in), straight pant (39in), Kota checks dupatta. Rs.1050 with free shipping.",
+    "desc": "Pink Dabu-cotton three-piece set with yoke and sleeve detailing, Kota checks dupatta — 43in top, 39in straight pant. Rs.1050, free shipping.",
     "category": "Cotton 3-Piece Sets",
     "kind": "stitched",
     "sizes": [
@@ -419,12 +419,12 @@
   },
   {
     "id": "p31",
-    "img": "assets/products/p31.jpg",
+    "img": "assets/products/p31.webp",
     "title": "Gold Cotton 3-Piece Set D01",
     "color": "Gold",
     "hex": "#B8892B",
     "price": 1050,
-    "desc": "Dabu cotton three-piece set — straight-cut top with yoke & sleeve work (43in), straight pant (39in), Kota checks dupatta. Rs.1050 with free shipping.",
+    "desc": "Warm gold Dabu-cotton set, festive-ready with its Kota checks dupatta — 43in top, 39in pant. Rs.1050, free shipping.",
     "category": "Cotton 3-Piece Sets",
     "kind": "stitched",
     "sizes": [
@@ -438,12 +438,12 @@
   },
   {
     "id": "p32",
-    "img": "assets/products/p32.jpg",
+    "img": "assets/products/p32.webp",
     "title": "Maroon Cotton 3-Piece Set D01",
     "color": "Maroon",
     "hex": "#6B1330",
     "price": 1050,
-    "desc": "Dabu cotton three-piece set — straight-cut top with yoke & sleeve work (43in), straight pant (39in), Kota checks dupatta. Rs.1050 with free shipping.",
+    "desc": "Deep maroon Dabu-cotton three-piece with worked yoke, paired with a Kota checks dupatta — 43in top, 39in pant. Rs.1050, free shipping.",
     "category": "Cotton 3-Piece Sets",
     "kind": "stitched",
     "sizes": [
@@ -457,12 +457,12 @@
   },
   {
     "id": "p33",
-    "img": "assets/products/p33.jpg",
+    "img": "assets/products/p33.webp",
     "title": "Blue Cotton 3-Piece Set D01",
     "color": "Blue",
     "hex": "#1B4F8C",
     "price": 1050,
-    "desc": "Dabu cotton three-piece set — straight-cut top with yoke & sleeve work (43in), straight pant (39in), Kota checks dupatta. Rs.1050 with free shipping.",
+    "desc": "Indigo-blue Dabu-cotton set for daily wear that still looks put-together — Kota checks dupatta, 43in top, 39in pant. Rs.1050, free shipping.",
     "category": "Cotton 3-Piece Sets",
     "kind": "stitched",
     "sizes": [
@@ -476,12 +476,12 @@
   },
   {
     "id": "p34",
-    "img": "assets/products/p34.jpg",
+    "img": "assets/products/p34.webp",
     "title": "Gold Cotton 3-Piece Set D02",
     "color": "Gold",
     "hex": "#B8892B",
     "price": 1050,
-    "desc": "Dabu cotton three-piece set — straight-cut top with yoke & sleeve work (43in), straight pant (39in), Kota checks dupatta. Rs.1050 with free shipping.",
+    "desc": "Second gold colourway in Dabu cotton with denser yoke work — Kota checks dupatta, 43in top, 39in pant. Rs.1050, free shipping.",
     "category": "Cotton 3-Piece Sets",
     "kind": "stitched",
     "sizes": [
@@ -495,12 +495,12 @@
   },
   {
     "id": "p35",
-    "img": "assets/products/p35.jpg",
+    "img": "assets/products/p35.webp",
     "title": "Green Cotton 3-Piece Set D01",
     "color": "Green",
     "hex": "#2F7A4F",
     "price": 1050,
-    "desc": "Dabu cotton three-piece set — straight-cut top with yoke & sleeve work (43in), straight pant (39in), Kota checks dupatta. Rs.1050 with free shipping.",
+    "desc": "Leaf-green Dabu-cotton three-piece, cool and breathable with a Kota checks dupatta — 43in top, 39in pant. Rs.1050, free shipping.",
     "category": "Cotton 3-Piece Sets",
     "kind": "stitched",
     "sizes": [
@@ -514,12 +514,12 @@
   },
   {
     "id": "p36",
-    "img": "assets/products/p36.jpg",
+    "img": "assets/products/p36.webp",
     "title": "Blue Kurti 3-Piece Set D01",
     "color": "Blue",
     "hex": "#1B4F8C",
     "price": 350,
-    "desc": "Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.",
+    "desc": "Everyday blue kurti three-piece with matching bottom and dupatta — office-proof comfort at Rs.350 + shipping.",
     "category": "Kurti 3-Piece Sets",
     "kind": "stitched",
     "sizes": [
@@ -533,12 +533,12 @@
   },
   {
     "id": "p37",
-    "img": "assets/products/p37.jpg",
+    "img": "assets/products/p37.webp",
     "title": "Gold Kurti 3-Piece Set D01",
     "color": "Gold",
     "hex": "#B8892B",
     "price": 350,
-    "desc": "Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.",
+    "desc": "Festive gold kurti set with coordinated bottom and dupatta — an easy pooja-morning pick at Rs.350 + shipping.",
     "category": "Kurti 3-Piece Sets",
     "kind": "stitched",
     "sizes": [
@@ -552,12 +552,12 @@
   },
   {
     "id": "p38",
-    "img": "assets/products/p38.jpg",
+    "img": "assets/products/p38.webp",
     "title": "Maroon Kurti 3-Piece Set D01",
     "color": "Maroon",
     "hex": "#6B1330",
     "price": 350,
-    "desc": "Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.",
+    "desc": "Maroon kurti three-piece, rich colour with matching bottom and dupatta — Rs.350 + shipping.",
     "category": "Kurti 3-Piece Sets",
     "kind": "stitched",
     "sizes": [
@@ -571,12 +571,12 @@
   },
   {
     "id": "p39",
-    "img": "assets/products/p39.jpg",
+    "img": "assets/products/p39.webp",
     "title": "Teal Kurti 3-Piece Set D01",
     "color": "Teal",
     "hex": "#116A5C",
     "price": 350,
-    "desc": "Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.",
+    "desc": "Teal kurti set that pairs well with silver — matching bottom and dupatta included. Rs.350 + shipping.",
     "category": "Kurti 3-Piece Sets",
     "kind": "stitched",
     "sizes": [
@@ -590,12 +590,12 @@
   },
   {
     "id": "p40",
-    "img": "assets/products/p40.jpg",
+    "img": "assets/products/p40.webp",
     "title": "Maroon Kurti 3-Piece Set D02",
     "color": "Maroon",
     "hex": "#6B1330",
     "price": 350,
-    "desc": "Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.",
+    "desc": "A second maroon kurti colourway with a different neckline finish — bottom and dupatta matched. Rs.350 + shipping.",
     "category": "Kurti 3-Piece Sets",
     "kind": "stitched",
     "sizes": [
@@ -609,12 +609,12 @@
   },
   {
     "id": "p41",
-    "img": "assets/products/p41.jpg",
+    "img": "assets/products/p41.webp",
     "title": "Green Kurti 3-Piece Set D01",
     "color": "Green",
     "hex": "#2F7A4F",
     "price": 350,
-    "desc": "Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.",
+    "desc": "Green kurti three-piece, fresh and simple with matching bottom and dupatta — Rs.350 + shipping.",
     "category": "Kurti 3-Piece Sets",
     "kind": "stitched",
     "sizes": [
@@ -628,12 +628,12 @@
   },
   {
     "id": "p42",
-    "img": "assets/products/p42.jpg",
+    "img": "assets/products/p42.webp",
     "title": "Pink Kurti 3-Piece Set D01",
     "color": "Pink",
     "hex": "#C21E6D",
     "price": 350,
-    "desc": "Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.",
+    "desc": "Cheerful pink kurti set with matching bottom and dupatta — college-and-errands friendly. Rs.350 + shipping.",
     "category": "Kurti 3-Piece Sets",
     "kind": "stitched",
     "sizes": [
@@ -647,12 +647,12 @@
   },
   {
     "id": "p43",
-    "img": "assets/products/p43.jpg",
+    "img": "assets/products/p43.webp",
     "title": "Gold Kurti 3-Piece Set D02",
     "color": "Gold",
     "hex": "#B8892B",
     "price": 350,
-    "desc": "Kurti three-piece set with matching bottom & dupatta. Rs.350 + shipping.",
+    "desc": "Deeper gold kurti colourway with matching bottom and dupatta — subtle sheen for evenings. Rs.350 + shipping.",
     "category": "Kurti 3-Piece Sets",
     "kind": "stitched",
     "sizes": [
@@ -666,7 +666,7 @@
   },
   {
     "id": "p44",
-    "img": "assets/products/p44.jpg",
+    "img": "assets/products/p44.webp",
     "title": "Pink Kurti D01",
     "color": "Pink",
     "hex": "#C21E6D",
@@ -685,7 +685,7 @@
   },
   {
     "id": "p45",
-    "img": "assets/products/p45.jpg",
+    "img": "assets/products/p45.webp",
     "title": "Blue Kurti D01",
     "color": "Blue",
     "hex": "#1B4F8C",
@@ -704,7 +704,7 @@
   },
   {
     "id": "p46",
-    "img": "assets/products/p46.jpg",
+    "img": "assets/products/p46.webp",
     "title": "Blue Kurti D02",
     "color": "Blue",
     "hex": "#1B4F8C",
@@ -723,7 +723,7 @@
   },
   {
     "id": "p47",
-    "img": "assets/products/p47.jpg",
+    "img": "assets/products/p47.webp",
     "title": "Pink Kurti D02",
     "color": "Pink",
     "hex": "#C21E6D",
@@ -742,7 +742,7 @@
   },
   {
     "id": "p48",
-    "img": "assets/products/p48.jpg",
+    "img": "assets/products/p48.webp",
     "title": "Maroon Kurti D01",
     "color": "Maroon",
     "hex": "#6B1330",
@@ -761,7 +761,7 @@
   },
   {
     "id": "p49",
-    "img": "assets/products/p49.jpg",
+    "img": "assets/products/p49.webp",
     "title": "Green Kurti D01",
     "color": "Green",
     "hex": "#2F7A4F",
@@ -780,7 +780,7 @@
   },
   {
     "id": "p50",
-    "img": "assets/products/p50.jpg",
+    "img": "assets/products/p50.webp",
     "title": "Purple Kurti D01",
     "color": "Purple",
     "hex": "#4A1F5E",
@@ -799,7 +799,7 @@
   },
   {
     "id": "p51",
-    "img": "assets/products/p51.jpg",
+    "img": "assets/products/p51.webp",
     "title": "Maroon Kurti D02",
     "color": "Maroon",
     "hex": "#6B1330",
@@ -818,7 +818,7 @@
   },
   {
     "id": "p52",
-    "img": "assets/products/p52.jpg",
+    "img": "assets/products/p52.webp",
     "title": "Maroon Kurti D03",
     "color": "Maroon",
     "hex": "#6B1330",
@@ -837,7 +837,7 @@
   },
   {
     "id": "p53",
-    "img": "assets/products/p53.jpg",
+    "img": "assets/products/p53.webp",
     "title": "Gold Kurti D01",
     "color": "Gold",
     "hex": "#B8892B",
@@ -856,7 +856,7 @@
   },
   {
     "id": "p54",
-    "img": "assets/products/p54.jpg",
+    "img": "assets/products/p54.webp",
     "title": "Pink Kurti D03",
     "color": "Pink",
     "hex": "#C21E6D",
@@ -875,7 +875,7 @@
   },
   {
     "id": "p55",
-    "img": "assets/products/p55.jpg",
+    "img": "assets/products/p55.webp",
     "title": "Gold Kurti D02",
     "color": "Gold",
     "hex": "#B8892B",
@@ -894,7 +894,7 @@
   },
   {
     "id": "p56",
-    "img": "assets/products/p56.jpg",
+    "img": "assets/products/p56.webp",
     "title": "Teal Kurti D01",
     "color": "Teal",
     "hex": "#116A5C",
@@ -913,7 +913,7 @@
   },
   {
     "id": "p57",
-    "img": "assets/products/p57.jpg",
+    "img": "assets/products/p57.webp",
     "title": "Gold Kurti D03",
     "color": "Gold",
     "hex": "#B8892B",
@@ -932,7 +932,7 @@
   },
   {
     "id": "p58",
-    "img": "assets/products/p58.jpg",
+    "img": "assets/products/p58.webp",
     "title": "Purple Kurti D02",
     "color": "Purple",
     "hex": "#4A1F5E",
@@ -951,7 +951,7 @@
   },
   {
     "id": "p59",
-    "img": "assets/products/p59.jpg",
+    "img": "assets/products/p59.webp",
     "title": "Maroon Kurti D04",
     "color": "Maroon",
     "hex": "#6B1330",
@@ -970,7 +970,7 @@
   },
   {
     "id": "p60",
-    "img": "assets/products/p60.jpg",
+    "img": "assets/products/p60.webp",
     "title": "Black Kurti D01",
     "color": "Black",
     "hex": "#1c1c1c",
@@ -989,7 +989,7 @@
   },
   {
     "id": "p61",
-    "img": "assets/products/p61.jpg",
+    "img": "assets/products/p61.webp",
     "title": "Green Kurti D02",
     "color": "Green",
     "hex": "#2F7A4F",
@@ -1008,7 +1008,7 @@
   },
   {
     "id": "p62",
-    "img": "assets/products/p62.jpg",
+    "img": "assets/products/p62.webp",
     "title": "Purple Kurti D03",
     "color": "Purple",
     "hex": "#4A1F5E",
@@ -1027,7 +1027,7 @@
   },
   {
     "id": "p63",
-    "img": "assets/products/p63.jpg",
+    "img": "assets/products/p63.webp",
     "title": "Green Kurti D03",
     "color": "Green",
     "hex": "#2F7A4F",
@@ -1046,7 +1046,7 @@
   },
   {
     "id": "p64",
-    "img": "assets/products/p64.jpg",
+    "img": "assets/products/p64.webp",
     "title": "Pink Kurti D04",
     "color": "Pink",
     "hex": "#C21E6D",
@@ -1065,7 +1065,7 @@
   },
   {
     "id": "p65",
-    "img": "assets/products/p65.jpg",
+    "img": "assets/products/p65.webp",
     "title": "Teal Kurti D02",
     "color": "Teal",
     "hex": "#116A5C",
@@ -1084,7 +1084,7 @@
   },
   {
     "id": "p66",
-    "img": "assets/products/p66.jpg",
+    "img": "assets/products/p66.webp",
     "title": "Green Kurti D04",
     "color": "Green",
     "hex": "#2F7A4F",
@@ -1103,7 +1103,7 @@
   },
   {
     "id": "p67",
-    "img": "assets/products/p67.jpg",
+    "img": "assets/products/p67.webp",
     "title": "Maroon Kurti D05",
     "color": "Maroon",
     "hex": "#6B1330",
@@ -1122,7 +1122,7 @@
   },
   {
     "id": "p68",
-    "img": "assets/products/p68.jpg",
+    "img": "assets/products/p68.webp",
     "title": "Blue Kurti D03",
     "color": "Blue",
     "hex": "#1B4F8C",
@@ -1141,7 +1141,7 @@
   },
   {
     "id": "p69",
-    "img": "assets/products/p69.jpg",
+    "img": "assets/products/p69.webp",
     "title": "Gold Kurti D04",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1160,7 +1160,7 @@
   },
   {
     "id": "p70",
-    "img": "assets/products/p70.jpg",
+    "img": "assets/products/p70.webp",
     "title": "Blue Kurti D04",
     "color": "Blue",
     "hex": "#1B4F8C",
@@ -1179,7 +1179,7 @@
   },
   {
     "id": "p71",
-    "img": "assets/products/p71.jpg",
+    "img": "assets/products/p71.webp",
     "title": "Gold Kurti D05",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1198,7 +1198,7 @@
   },
   {
     "id": "p72",
-    "img": "assets/products/p72.jpg",
+    "img": "assets/products/p72.webp",
     "title": "Blue Kurti D05",
     "color": "Blue",
     "hex": "#1B4F8C",
@@ -1217,7 +1217,7 @@
   },
   {
     "id": "p73",
-    "img": "assets/products/p73.jpg",
+    "img": "assets/products/p73.webp",
     "title": "Blue Kurti D06",
     "color": "Blue",
     "hex": "#1B4F8C",
@@ -1236,7 +1236,7 @@
   },
   {
     "id": "p74",
-    "img": "assets/products/p74.jpg",
+    "img": "assets/products/p74.webp",
     "title": "Blue Kurti D07",
     "color": "Blue",
     "hex": "#1B4F8C",
@@ -1255,7 +1255,7 @@
   },
   {
     "id": "p75",
-    "img": "assets/products/p75.jpg",
+    "img": "assets/products/p75.webp",
     "title": "Maroon Kurti D06",
     "color": "Maroon",
     "hex": "#6B1330",
@@ -1274,7 +1274,7 @@
   },
   {
     "id": "p76",
-    "img": "assets/products/p76.jpg",
+    "img": "assets/products/p76.webp",
     "title": "Blue Kurti D08",
     "color": "Blue",
     "hex": "#1B4F8C",
@@ -1293,7 +1293,7 @@
   },
   {
     "id": "p77",
-    "img": "assets/products/p77.jpg",
+    "img": "assets/products/p77.webp",
     "title": "Gold Kurti D06",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1312,12 +1312,12 @@
   },
   {
     "id": "p78",
-    "img": "assets/products/p78.jpg",
+    "img": "assets/products/p78.webp",
     "title": "Gold Anarkali D01",
     "color": "Gold",
     "hex": "#B8892B",
     "price": 699,
-    "desc": "Rayon Anarkali, length 44-45in. Rs.699 + shipping. Book fast — limited stock.",
+    "desc": "Gold rayon Anarkali with a 44–45in flare that moves beautifully — Rs.699 + shipping. Limited pieces.",
     "category": "Anarkalis",
     "kind": "stitched",
     "sizes": [
@@ -1329,12 +1329,12 @@
   },
   {
     "id": "p79",
-    "img": "assets/products/p79.jpg",
+    "img": "assets/products/p79.webp",
     "title": "Gold Anarkali D02",
     "color": "Gold",
     "hex": "#B8892B",
     "price": 699,
-    "desc": "Rayon Anarkali, length 44-45in. Rs.699 + shipping. Book fast — limited stock.",
+    "desc": "Second gold Anarkali colourway on a warmer base — 44–45in length. Rs.699 + shipping, limited pieces.",
     "category": "Anarkalis",
     "kind": "stitched",
     "sizes": [
@@ -1346,12 +1346,12 @@
   },
   {
     "id": "p80",
-    "img": "assets/products/p80.jpg",
+    "img": "assets/products/p80.webp",
     "title": "Gold Anarkali D03",
     "color": "Gold",
     "hex": "#B8892B",
     "price": 699,
-    "desc": "Rayon Anarkali, length 44-45in. Rs.699 + shipping. Book fast — limited stock.",
+    "desc": "Antique-toned gold Anarkali, the dressiest of the three — 44–45in. Rs.699 + shipping, limited pieces.",
     "category": "Anarkalis",
     "kind": "stitched",
     "sizes": [
@@ -1363,12 +1363,12 @@
   },
   {
     "id": "p81",
-    "img": "assets/products/p81.jpg",
+    "img": "assets/products/p81.webp",
     "title": "Maroon Anarkali D01",
     "color": "Maroon",
     "hex": "#6B1330",
     "price": 699,
-    "desc": "Rayon Anarkali, length 44-45in. Rs.699 + shipping. Book fast — limited stock.",
+    "desc": "Maroon rayon Anarkali for festive evenings — 44–45in flare. Rs.699 + shipping, limited pieces.",
     "category": "Anarkalis",
     "kind": "stitched",
     "sizes": [
@@ -1380,7 +1380,7 @@
   },
   {
     "id": "p82",
-    "img": "assets/products/p82.jpg",
+    "img": "assets/products/p82.webp",
     "title": "Black Wedding Saree D01",
     "color": "Black",
     "hex": "#1c1c1c",
@@ -1392,7 +1392,7 @@
   },
   {
     "id": "p83",
-    "img": "assets/products/p83.jpg",
+    "img": "assets/products/p83.webp",
     "title": "Gold Wedding Saree D01",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1404,7 +1404,7 @@
   },
   {
     "id": "p84",
-    "img": "assets/products/p84.jpg",
+    "img": "assets/products/p84.webp",
     "title": "Black Wedding Saree D02",
     "color": "Black",
     "hex": "#1c1c1c",
@@ -1416,7 +1416,7 @@
   },
   {
     "id": "p85",
-    "img": "assets/products/p85.jpg",
+    "img": "assets/products/p85.webp",
     "title": "Gold Wedding Saree D02",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1428,7 +1428,7 @@
   },
   {
     "id": "p86",
-    "img": "assets/products/p86.jpg",
+    "img": "assets/products/p86.webp",
     "title": "Gold Wedding Saree D03",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1440,7 +1440,7 @@
   },
   {
     "id": "p87",
-    "img": "assets/products/p87.jpg",
+    "img": "assets/products/p87.webp",
     "title": "Black Wedding Saree D03",
     "color": "Black",
     "hex": "#1c1c1c",
@@ -1452,7 +1452,7 @@
   },
   {
     "id": "p88",
-    "img": "assets/products/p88.jpg",
+    "img": "assets/products/p88.webp",
     "title": "Gold Wedding Saree D04",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1464,7 +1464,7 @@
   },
   {
     "id": "p89",
-    "img": "assets/products/p89.jpg",
+    "img": "assets/products/p89.webp",
     "title": "Black Wedding Saree D04",
     "color": "Black",
     "hex": "#1c1c1c",
@@ -1476,7 +1476,7 @@
   },
   {
     "id": "p90",
-    "img": "assets/products/p90.jpg",
+    "img": "assets/products/p90.webp",
     "title": "Gold Wedding Saree D05",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1488,7 +1488,7 @@
   },
   {
     "id": "p91",
-    "img": "assets/products/p91.jpg",
+    "img": "assets/products/p91.webp",
     "title": "Black Wedding Saree D05",
     "color": "Black",
     "hex": "#1c1c1c",
@@ -1500,7 +1500,7 @@
   },
   {
     "id": "p92",
-    "img": "assets/products/p92.jpg",
+    "img": "assets/products/p92.webp",
     "title": "Black Wedding Saree D06",
     "color": "Black",
     "hex": "#1c1c1c",
@@ -1512,7 +1512,7 @@
   },
   {
     "id": "p93",
-    "img": "assets/products/p93.jpg",
+    "img": "assets/products/p93.webp",
     "title": "Blue Wedding Saree D01",
     "color": "Blue",
     "hex": "#1B4F8C",
@@ -1524,7 +1524,7 @@
   },
   {
     "id": "p94",
-    "img": "assets/products/p94.jpg",
+    "img": "assets/products/p94.webp",
     "title": "Black Wedding Saree D07",
     "color": "Black",
     "hex": "#1c1c1c",
@@ -1536,7 +1536,7 @@
   },
   {
     "id": "p95",
-    "img": "assets/products/p95.jpg",
+    "img": "assets/products/p95.webp",
     "title": "Gold Wedding Saree D06",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1548,7 +1548,7 @@
   },
   {
     "id": "p96",
-    "img": "assets/products/p96.jpg",
+    "img": "assets/products/p96.webp",
     "title": "Gold Wedding Saree D07",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1560,7 +1560,7 @@
   },
   {
     "id": "p97",
-    "img": "assets/products/p97.jpg",
+    "img": "assets/products/p97.webp",
     "title": "Black Wedding Saree D08",
     "color": "Black",
     "hex": "#1c1c1c",
@@ -1572,7 +1572,7 @@
   },
   {
     "id": "p98",
-    "img": "assets/products/p98.jpg",
+    "img": "assets/products/p98.webp",
     "title": "Black Wedding Saree D09",
     "color": "Black",
     "hex": "#1c1c1c",
@@ -1584,7 +1584,7 @@
   },
   {
     "id": "p99",
-    "img": "assets/products/p99.jpg",
+    "img": "assets/products/p99.webp",
     "title": "Black Wedding Saree D10",
     "color": "Black",
     "hex": "#1c1c1c",
@@ -1596,7 +1596,7 @@
   },
   {
     "id": "p100",
-    "img": "assets/products/p100.jpg",
+    "img": "assets/products/p100.webp",
     "title": "Gold Wedding Saree D08",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1608,7 +1608,7 @@
   },
   {
     "id": "p101",
-    "img": "assets/products/p101.jpg",
+    "img": "assets/products/p101.webp",
     "title": "Gold Wedding Saree D09",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1620,7 +1620,7 @@
   },
   {
     "id": "p102",
-    "img": "assets/products/p102.jpg",
+    "img": "assets/products/p102.webp",
     "title": "Gold Wedding Saree D10",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1632,7 +1632,7 @@
   },
   {
     "id": "p103",
-    "img": "assets/products/p103.jpg",
+    "img": "assets/products/p103.webp",
     "title": "Black Wedding Saree D11",
     "color": "Black",
     "hex": "#1c1c1c",
@@ -1644,7 +1644,7 @@
   },
   {
     "id": "p104",
-    "img": "assets/products/p104.jpg",
+    "img": "assets/products/p104.webp",
     "title": "Blue Wedding Saree D02",
     "color": "Blue",
     "hex": "#1B4F8C",
@@ -1656,7 +1656,7 @@
   },
   {
     "id": "p105",
-    "img": "assets/products/p105.jpg",
+    "img": "assets/products/p105.webp",
     "title": "Maroon Wedding Saree D01",
     "color": "Maroon",
     "hex": "#6B1330",
@@ -1668,7 +1668,7 @@
   },
   {
     "id": "p106",
-    "img": "assets/products/p106.jpg",
+    "img": "assets/products/p106.webp",
     "title": "Gold Wedding Saree D11",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1680,7 +1680,7 @@
   },
   {
     "id": "p107",
-    "img": "assets/products/p107.jpg",
+    "img": "assets/products/p107.webp",
     "title": "Gold Wedding Saree D12",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1692,7 +1692,7 @@
   },
   {
     "id": "p108",
-    "img": "assets/products/p108.jpg",
+    "img": "assets/products/p108.webp",
     "title": "Gold Wedding Saree D13",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1704,7 +1704,7 @@
   },
   {
     "id": "p109",
-    "img": "assets/products/p109.jpg",
+    "img": "assets/products/p109.webp",
     "title": "Black Wedding Saree D12",
     "color": "Black",
     "hex": "#1c1c1c",
@@ -1716,7 +1716,7 @@
   },
   {
     "id": "p110",
-    "img": "assets/products/p110.jpg",
+    "img": "assets/products/p110.webp",
     "title": "Gold Wedding Saree D14",
     "color": "Gold",
     "hex": "#B8892B",
@@ -1728,7 +1728,7 @@
   },
   {
     "id": "p111",
-    "img": "assets/products/p111.jpg",
+    "img": "assets/products/p111.webp",
     "title": "Gold Wedding Saree D15",
     "color": "Gold",
     "hex": "#B8892B",

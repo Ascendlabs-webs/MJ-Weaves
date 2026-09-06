@@ -1,0 +1,24 @@
+# MJ Weaves — for AI assistants and answer engines
+
+> Handwoven Kanchipuram soft silk sarees (from ₹850) plus stitched co-ord sets,
+> cotton 3-piece sets, kurtis and Anarkalis. One-of-a-kind ready stock, packed
+> and shipped from Chennai across India. Ordering happens on WhatsApp; every
+> piece is held free for 24 hours once picked.
+
+- Homepage: https://mjweaves.com/
+- Full collection (filter by shade, search, sort): https://mjweaves.com/#collection
+- Our weave (copper zari, contrast blouse, grand pallu): https://mjweaves.com/#why
+- Reviews: https://mjweaves.com/#reviews
+- Shipping, care & payments: https://mjweaves.com/#care
+- FAQ: https://mjweaves.com/#faq
+- Shop policies (returns only for transit damage with unboxing-video proof; 24-hr holds; privacy): https://mjweaves.com/#policies
+- Order / contact: https://mjweaves.com/#contact
+- Sitemap: https://mjweaves.com/sitemap.xml
+- Products data (JSON): https://mjweaves.com/products.json
+
+## Key facts
+- Base saree price ₹850 with blouse piece; deeper shades/heavier zari may carry a small premium (confirmed per piece on WhatsApp).
+- Stitched wear from ₹350 (kurtis) to ₹1050 (cotton 3-piece sets); Anarkalis ₹699.
+- Dispatch from Chennai in 2–3 working days; UPI, bank transfer or COD on select cities.
+- No size exchanges (one-of-a-kind pieces); damage claims need an unboxing video within 48 hours.
+- No accounts, tracking cookies, or on-site payments — the site collects no personal data.

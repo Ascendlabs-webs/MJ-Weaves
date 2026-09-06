@@ -2,4 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /admin.html
 
-Sitemap: https://keerthi-fashion.vercel.app/sitemap.xml
+Sitemap: https://mjweaves.com/sitemap.xml
+
+# AI assistants: start here
+# https://mjweaves.com/llms.txt
