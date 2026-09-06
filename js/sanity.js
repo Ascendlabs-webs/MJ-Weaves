@@ -12,9 +12,8 @@
 (function () {
   "use strict";
 
-  // TODO: set after creating the Sanity project (sanity.io/manage).
-  // Kept as a plain const: safe to commit, public dataset needs no secret.
-  var PROJECT_ID = "SANITY_PROJECT_ID";
+  // Sanity project for MJ Weaves (public dataset, no secret — safe to commit).
+  var PROJECT_ID = "xyo6yn81";
   var DATASET = "production";
   var API_VERSION = "v2025-01-01";
 
