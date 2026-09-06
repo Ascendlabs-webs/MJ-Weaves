@@ -1,4 +1,5 @@
 .env.local
+studio/.env
 node_modules/
 studio/node_modules/
 studio/dist/
