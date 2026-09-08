@@ -74,8 +74,10 @@ for (const p of products) {
   if (!existsSync(join(ROOT, p.img))) fail(`missing image file for ${p.id}: ${p.img}`);
 }
 
-// --- extract page content from index.html ---
-const html = readFileSync(join(ROOT, 'index.html'), 'utf8');
+// --- extract page content from index.html (config now lives in app.js) ---
+const html = existsSync(join(ROOT, 'app.js'))
+  ? readFileSync(join(ROOT, 'app.js'), 'utf8')
+  : readFileSync(join(ROOT, 'index.html'), 'utf8');
 const unesc = (s) =>
   String(s)
     .replace(/&amp;/g, '&')
@@ -113,11 +115,15 @@ if (quotes.length !== 3 || whos.length !== 3) fail(`expected 3 reviews, found ${
 if (faqs.length !== 6) fail(`expected 6 FAQs, found ${faqs.length}`);
 if (shippingBullets.length !== 4) fail(`expected 4 shipping bullets, found ${shippingBullets.length}`);
 if (careBullets.length !== 4) fail(`expected 4 care bullets, found ${careBullets.length}`);
-if (!wa || !ig) fail('could not find WHATSAPP_NUMBER / INSTAGRAM_URL in index.html');
+if (!wa || !ig) fail('could not find WHATSAPP_NUMBER / INSTAGRAM_URL in app.js');
 
 // --- build mutations ---
 const mutations = [];
-const uploads = products.map((p) => ({id: p.id, file: p.img, filename: p.id + '.jpg'}));
+const uploads = products.map((p) => {
+  const m = /\.([a-z0-9]+)$/i.exec(p.img || '');
+  const ext = (m ? m[1] : 'jpg').toLowerCase();
+  return {id: p.id, file: p.img, filename: p.id + '.' + ext, mime: 'image/' + (ext === 'jpg' ? 'jpeg' : ext)};
+});
 
 for (const p of products) {
   mutations.push({
@@ -209,7 +215,7 @@ for (const u of uploads) {
   const buf = readFileSync(join(ROOT, u.file));
   const up = await api(`/assets/images/${DATASET}?filename=${encodeURIComponent(u.filename)}`, {
     method: 'POST',
-    headers: {'Content-Type': 'image/jpeg'},
+    headers: {'Content-Type': u.mime},
     body: buf,
   });
   assetIds[u.id] = up.document._id;

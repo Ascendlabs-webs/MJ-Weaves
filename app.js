@@ -113,8 +113,8 @@ const IMG_DIMS={
 };
 
 // ---------------- CONFIG ----------------
-  // ⚠️ Replace with the real business WhatsApp number (country code, no + or spaces)
-  const WHATSAPP_NUMBER = "919999999999";
+  // Business WhatsApp number (India country code, no + or spaces)
+  const WHATSAPP_NUMBER = "917904137885";
   // ⚠️ Replace with your real Instagram handle
   const INSTAGRAM_URL = "https://instagram.com/";
   const SHOP_NAME = "MJ Weaves";
@@ -123,7 +123,7 @@ const IMG_DIMS={
   // Products are served from products.json (editable via admin.html).
   // The array below is only a fallback if the JSON can't be fetched.
   const FALLBACK_PRODUCTS = [
-    { id:"p01", img:"assets/products/p01.jpg", title:"Emerald Teal Kanjivaram", color:"Teal", hex:"#116A5C", price:850, desc:"A deep emerald body with copper zari buttas and a blush pink contrast pallu — a quiet, regal drape for day functions.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost" },
+    { id:"p01", img:"assets/products/p01.webp", title:"Emerald Teal Kanjivaram", color:"Teal", hex:"#116A5C", price:850, desc:"A deep emerald body with copper zari buttas and a blush pink contrast pallu — a quiet, regal drape for day functions.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost" },
     { id:"p02", img:"assets/products/p02.webp", title:"Rani Pink Kanjivaram", color:"Pink", hex:"#C21E6D", price:850, desc:"A classic rani pink with a heavier grand pallu — celebratory without being loud, made for poojas and sangeet evenings.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost", soldOut:true },
     { id:"p03", img:"assets/products/p03.webp", title:"Royal Violet Kanjivaram", color:"Purple", hex:"#4A1F5E", price:850, desc:"Royal violet silk with copper zari that catches light as you move. One of the most requested shades this season.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost" },
     { id:"p04", img:"assets/products/p04.webp", title:"Peacock Blue Kanjivaram", color:"Blue", hex:"#1B4F8C", price:850, desc:"Peacock blue with a contrasting gold-edged pallu. A full-day weave — temple in the morning, reception by evening.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost" },
