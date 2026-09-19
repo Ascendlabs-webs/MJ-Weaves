@@ -74,10 +74,12 @@ for (const p of products) {
   if (!existsSync(join(ROOT, p.img))) fail(`missing image file for ${p.id}: ${p.img}`);
 }
 
-// --- extract page content from index.html (config now lives in app.js) ---
-const html = existsSync(join(ROOT, 'app.js'))
+// --- extract page content: reviews/FAQs live in index.html,
+// config (WhatsApp/Instagram) lives in app.js since the SEO refactor ---
+const html = readFileSync(join(ROOT, 'index.html'), 'utf8');
+const cfgSrc = existsSync(join(ROOT, 'app.js'))
   ? readFileSync(join(ROOT, 'app.js'), 'utf8')
-  : readFileSync(join(ROOT, 'index.html'), 'utf8');
+  : html;
 const unesc = (s) =>
   String(s)
     .replace(/&amp;/g, '&')
@@ -108,8 +110,8 @@ function bulletsFor(heading) {
 const shippingBullets = bulletsFor('Shipping &amp; Delivery');
 const careBullets = bulletsFor('Looking After Your Saree');
 
-const wa = /const WHATSAPP_NUMBER = "([^"]+)"/.exec(html);
-const ig = /const INSTAGRAM_URL = "([^"]+)"/.exec(html);
+const wa = /const WHATSAPP_NUMBER = "([^"]+)"/.exec(cfgSrc);
+const ig = /const INSTAGRAM_URL = "([^"]+)"/.exec(cfgSrc);
 
 if (quotes.length !== 3 || whos.length !== 3) fail(`expected 3 reviews, found ${quotes.length} quotes / ${whos.length} authors`);
 if (faqs.length !== 6) fail(`expected 6 FAQs, found ${faqs.length}`);
