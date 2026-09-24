@@ -1,8 +1,969 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mjweaves.com/</loc>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p01.webp</image:loc>
+      <image:title>Emerald Teal Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p02.webp</image:loc>
+      <image:title>Rani Pink Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p03.webp</image:loc>
+      <image:title>Royal Violet Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p04.webp</image:loc>
+      <image:title>Peacock Blue Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p05.webp</image:loc>
+      <image:title>Deep Amethyst Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p06.webp</image:loc>
+      <image:title>Sky Blue Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p07.webp</image:loc>
+      <image:title>Meadow Green Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p08.webp</image:loc>
+      <image:title>Bottle Green Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p09.webp</image:loc>
+      <image:title>Amethyst Gold Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p10.webp</image:loc>
+      <image:title>Indigo Violet Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p11.webp</image:loc>
+      <image:title>Maroon Blush Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p12.webp</image:loc>
+      <image:title>Midnight Rose Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p13.webp</image:loc>
+      <image:title>Cerulean Copper Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p14.webp</image:loc>
+      <image:title>Mustard Maroon Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p15.webp</image:loc>
+      <image:title>Antique Gold Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p16.webp</image:loc>
+      <image:title>Navy Zari Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p17.webp</image:loc>
+      <image:title>Grape Teal Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p18.webp</image:loc>
+      <image:title>Blush Noir Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p19.webp</image:loc>
+      <image:title>Wine Violet Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p20.webp</image:loc>
+      <image:title>Citrus Lime Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p21.webp</image:loc>
+      <image:title>Lilac Grey Kanjivaram</image:title>
+      <image:caption>Soft Silk Sarees — Rs.850</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p22.webp</image:loc>
+      <image:title>Samuthrika Vasthrakala Wedding Kanjivaram</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p23.webp</image:loc>
+      <image:title>Teal Co-ord Set D01</image:title>
+      <image:caption>Co-ord Sets — Rs.599</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p24.webp</image:loc>
+      <image:title>Pink Co-ord Set D01</image:title>
+      <image:caption>Co-ord Sets — Rs.599</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p25.webp</image:loc>
+      <image:title>Pink Co-ord Set D02</image:title>
+      <image:caption>Co-ord Sets — Rs.599</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p26.webp</image:loc>
+      <image:title>Green Co-ord Set D01</image:title>
+      <image:caption>Co-ord Sets — Rs.599</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p27.webp</image:loc>
+      <image:title>Maroon Co-ord Set D01</image:title>
+      <image:caption>Co-ord Sets — Rs.599</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p28.webp</image:loc>
+      <image:title>Pink Co-ord Set D03</image:title>
+      <image:caption>Co-ord Sets — Rs.599</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p29.webp</image:loc>
+      <image:title>Blue Co-ord Set D01</image:title>
+      <image:caption>Co-ord Sets — Rs.599</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p30.webp</image:loc>
+      <image:title>Pink Cotton 3-Piece Set D01</image:title>
+      <image:caption>Cotton 3-Piece Sets — Rs.1050</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p31.webp</image:loc>
+      <image:title>Gold Cotton 3-Piece Set D01</image:title>
+      <image:caption>Cotton 3-Piece Sets — Rs.1050</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p32.webp</image:loc>
+      <image:title>Maroon Cotton 3-Piece Set D01</image:title>
+      <image:caption>Cotton 3-Piece Sets — Rs.1050</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p33.webp</image:loc>
+      <image:title>Blue Cotton 3-Piece Set D01</image:title>
+      <image:caption>Cotton 3-Piece Sets — Rs.1050</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p34.webp</image:loc>
+      <image:title>Gold Cotton 3-Piece Set D02</image:title>
+      <image:caption>Cotton 3-Piece Sets — Rs.1050</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p35.webp</image:loc>
+      <image:title>Green Cotton 3-Piece Set D01</image:title>
+      <image:caption>Cotton 3-Piece Sets — Rs.1050</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p36.webp</image:loc>
+      <image:title>Blue Kurti 3-Piece Set D01</image:title>
+      <image:caption>Kurti 3-Piece Sets — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p37.webp</image:loc>
+      <image:title>Gold Kurti 3-Piece Set D01</image:title>
+      <image:caption>Kurti 3-Piece Sets — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p38.webp</image:loc>
+      <image:title>Maroon Kurti 3-Piece Set D01</image:title>
+      <image:caption>Kurti 3-Piece Sets — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p39.webp</image:loc>
+      <image:title>Teal Kurti 3-Piece Set D01</image:title>
+      <image:caption>Kurti 3-Piece Sets — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p40.webp</image:loc>
+      <image:title>Maroon Kurti 3-Piece Set D02</image:title>
+      <image:caption>Kurti 3-Piece Sets — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p41.webp</image:loc>
+      <image:title>Green Kurti 3-Piece Set D01</image:title>
+      <image:caption>Kurti 3-Piece Sets — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p42.webp</image:loc>
+      <image:title>Pink Kurti 3-Piece Set D01</image:title>
+      <image:caption>Kurti 3-Piece Sets — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p43.webp</image:loc>
+      <image:title>Gold Kurti 3-Piece Set D02</image:title>
+      <image:caption>Kurti 3-Piece Sets — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p44.webp</image:loc>
+      <image:title>Pink Kurti D01</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p45.webp</image:loc>
+      <image:title>Blue Kurti D01</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p46.webp</image:loc>
+      <image:title>Blue Kurti D02</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p47.webp</image:loc>
+      <image:title>Pink Kurti D02</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p48.webp</image:loc>
+      <image:title>Maroon Kurti D01</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p49.webp</image:loc>
+      <image:title>Green Kurti D01</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p50.webp</image:loc>
+      <image:title>Purple Kurti D01</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p51.webp</image:loc>
+      <image:title>Maroon Kurti D02</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p52.webp</image:loc>
+      <image:title>Maroon Kurti D03</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p53.webp</image:loc>
+      <image:title>Gold Kurti D01</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p54.webp</image:loc>
+      <image:title>Pink Kurti D03</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p55.webp</image:loc>
+      <image:title>Gold Kurti D02</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p56.webp</image:loc>
+      <image:title>Teal Kurti D01</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p57.webp</image:loc>
+      <image:title>Gold Kurti D03</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p58.webp</image:loc>
+      <image:title>Purple Kurti D02</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p59.webp</image:loc>
+      <image:title>Maroon Kurti D04</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p60.webp</image:loc>
+      <image:title>Black Kurti D01</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p61.webp</image:loc>
+      <image:title>Green Kurti D02</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p62.webp</image:loc>
+      <image:title>Purple Kurti D03</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p63.webp</image:loc>
+      <image:title>Green Kurti D03</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p64.webp</image:loc>
+      <image:title>Pink Kurti D04</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p65.webp</image:loc>
+      <image:title>Teal Kurti D02</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p66.webp</image:loc>
+      <image:title>Green Kurti D04</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p67.webp</image:loc>
+      <image:title>Maroon Kurti D05</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p68.webp</image:loc>
+      <image:title>Blue Kurti D03</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p69.webp</image:loc>
+      <image:title>Gold Kurti D04</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p70.webp</image:loc>
+      <image:title>Blue Kurti D04</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p71.webp</image:loc>
+      <image:title>Gold Kurti D05</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p72.webp</image:loc>
+      <image:title>Blue Kurti D05</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p73.webp</image:loc>
+      <image:title>Blue Kurti D06</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p74.webp</image:loc>
+      <image:title>Blue Kurti D07</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p75.webp</image:loc>
+      <image:title>Maroon Kurti D06</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p76.webp</image:loc>
+      <image:title>Blue Kurti D08</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p77.webp</image:loc>
+      <image:title>Gold Kurti D06</image:title>
+      <image:caption>Kurtis — Rs.350</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p78.webp</image:loc>
+      <image:title>Gold Anarkali D01</image:title>
+      <image:caption>Anarkalis — Rs.699</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p79.webp</image:loc>
+      <image:title>Gold Anarkali D02</image:title>
+      <image:caption>Anarkalis — Rs.699</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p80.webp</image:loc>
+      <image:title>Gold Anarkali D03</image:title>
+      <image:caption>Anarkalis — Rs.699</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p81.webp</image:loc>
+      <image:title>Maroon Anarkali D01</image:title>
+      <image:caption>Anarkalis — Rs.699</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p82.webp</image:loc>
+      <image:title>Black Wedding Saree D01</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p83.webp</image:loc>
+      <image:title>Gold Wedding Saree D01</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p84.webp</image:loc>
+      <image:title>Black Wedding Saree D02</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p85.webp</image:loc>
+      <image:title>Gold Wedding Saree D02</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p86.webp</image:loc>
+      <image:title>Gold Wedding Saree D03</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p87.webp</image:loc>
+      <image:title>Black Wedding Saree D03</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p88.webp</image:loc>
+      <image:title>Gold Wedding Saree D04</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p89.webp</image:loc>
+      <image:title>Black Wedding Saree D04</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p90.webp</image:loc>
+      <image:title>Gold Wedding Saree D05</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p91.webp</image:loc>
+      <image:title>Black Wedding Saree D05</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p92.webp</image:loc>
+      <image:title>Black Wedding Saree D06</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p93.webp</image:loc>
+      <image:title>Blue Wedding Saree D01</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p94.webp</image:loc>
+      <image:title>Black Wedding Saree D07</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p95.webp</image:loc>
+      <image:title>Gold Wedding Saree D06</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p96.webp</image:loc>
+      <image:title>Gold Wedding Saree D07</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p97.webp</image:loc>
+      <image:title>Black Wedding Saree D08</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p98.webp</image:loc>
+      <image:title>Black Wedding Saree D09</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p99.webp</image:loc>
+      <image:title>Black Wedding Saree D10</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p100.webp</image:loc>
+      <image:title>Gold Wedding Saree D08</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p101.webp</image:loc>
+      <image:title>Gold Wedding Saree D09</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p102.webp</image:loc>
+      <image:title>Gold Wedding Saree D10</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p103.webp</image:loc>
+      <image:title>Black Wedding Saree D11</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p104.webp</image:loc>
+      <image:title>Blue Wedding Saree D02</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p105.webp</image:loc>
+      <image:title>Maroon Wedding Saree D01</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p106.webp</image:loc>
+      <image:title>Gold Wedding Saree D11</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p107.webp</image:loc>
+      <image:title>Gold Wedding Saree D12</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p108.webp</image:loc>
+      <image:title>Gold Wedding Saree D13</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p109.webp</image:loc>
+      <image:title>Black Wedding Saree D12</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p110.webp</image:loc>
+      <image:title>Gold Wedding Saree D14</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p111.webp</image:loc>
+      <image:title>Gold Wedding Saree D15</image:title>
+      <image:caption>Wedding Sarees — Rs.1550</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p112.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D01</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p113.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D02</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p114.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D03</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p115.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D04</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p116.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D05</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p117.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D06</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p118.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D07</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p119.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D08</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p120.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D09</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p121.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D10</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p122.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D11</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p123.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D12</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p124.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D13</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p125.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D14</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p126.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D15</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p127.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D16</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p128.jpg</image:loc>
+      <image:title>Gold Premium Silk Saree D17</image:title>
+      <image:caption>Premium Silk Sarees — Rs.1899</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p129.jpg</image:loc>
+      <image:title>Maroon Chiffon Georgette Saree D01</image:title>
+      <image:caption>Chiffon Georgette Sarees — Rs.1090</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p130.jpg</image:loc>
+      <image:title>Maroon Chiffon Georgette Saree D02</image:title>
+      <image:caption>Chiffon Georgette Sarees — Rs.1090</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p131.jpg</image:loc>
+      <image:title>Gold Chiffon Georgette Saree D01</image:title>
+      <image:caption>Chiffon Georgette Sarees — Rs.1090</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p132.jpg</image:loc>
+      <image:title>Pink Chiffon Georgette Saree D01</image:title>
+      <image:caption>Chiffon Georgette Sarees — Rs.1090</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p133.jpg</image:loc>
+      <image:title>Gold Chiffon Georgette Saree D02</image:title>
+      <image:caption>Chiffon Georgette Sarees — Rs.1090</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p134.jpg</image:loc>
+      <image:title>Gold Chiffon Georgette Saree D03</image:title>
+      <image:caption>Chiffon Georgette Sarees — Rs.1090</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p135.jpg</image:loc>
+      <image:title>Green Gajji Silk Saree D01</image:title>
+      <image:caption>Gajji Silk Sarees — Rs.1680</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p136.jpg</image:loc>
+      <image:title>Blue Gajji Silk Saree D01</image:title>
+      <image:caption>Gajji Silk Sarees — Rs.1680</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p137.jpg</image:loc>
+      <image:title>Blue Gajji Silk Saree D02</image:title>
+      <image:caption>Gajji Silk Sarees — Rs.1680</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p138.jpg</image:loc>
+      <image:title>Maroon Gajji Silk Saree D01</image:title>
+      <image:caption>Gajji Silk Sarees — Rs.1680</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p139.jpg</image:loc>
+      <image:title>Maroon Gajji Silk Saree D02</image:title>
+      <image:caption>Gajji Silk Sarees — Rs.1680</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p140.jpg</image:loc>
+      <image:title>Pink Gajji Silk Saree D01</image:title>
+      <image:caption>Gajji Silk Sarees — Rs.1680</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p141.jpg</image:loc>
+      <image:title>Maroon Gajji Silk Saree D03</image:title>
+      <image:caption>Gajji Silk Sarees — Rs.1680</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p142.jpg</image:loc>
+      <image:title>Gold Gajji Silk Saree D01</image:title>
+      <image:caption>Gajji Silk Sarees — Rs.1680</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p143.jpg</image:loc>
+      <image:title>Purple Gajji Silk Saree D01</image:title>
+      <image:caption>Gajji Silk Sarees — Rs.1680</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p144.jpg</image:loc>
+      <image:title>Blue Gajji Silk Saree D03</image:title>
+      <image:caption>Gajji Silk Sarees — Rs.1680</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p145.jpg</image:loc>
+      <image:title>Pink Premium Soft Silk Saree D01</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p146.jpg</image:loc>
+      <image:title>Pink Premium Soft Silk Saree D02</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p147.jpg</image:loc>
+      <image:title>Green Premium Soft Silk Saree D01</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p148.jpg</image:loc>
+      <image:title>Purple Premium Soft Silk Saree D01</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p149.jpg</image:loc>
+      <image:title>Gold Premium Soft Silk Saree D01</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p150.jpg</image:loc>
+      <image:title>Gold Premium Soft Silk Saree D02</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p151.jpg</image:loc>
+      <image:title>Gold Premium Soft Silk Saree D03</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p152.jpg</image:loc>
+      <image:title>Green Premium Soft Silk Saree D02</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p153.jpg</image:loc>
+      <image:title>Pink Premium Soft Silk Saree D03</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p154.jpg</image:loc>
+      <image:title>Gold Premium Soft Silk Saree D04</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p155.jpg</image:loc>
+      <image:title>Gold Premium Soft Silk Saree D05</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p156.jpg</image:loc>
+      <image:title>Gold Premium Soft Silk Saree D06</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p157.jpg</image:loc>
+      <image:title>Purple Premium Soft Silk Saree D02</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p158.jpg</image:loc>
+      <image:title>Gold Premium Soft Silk Saree D07</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p159.jpg</image:loc>
+      <image:title>Pink Premium Soft Silk Saree D04</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p160.jpg</image:loc>
+      <image:title>Maroon Premium Soft Silk Saree D01</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p161.jpg</image:loc>
+      <image:title>Gold Premium Soft Silk Saree D08</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p162.jpg</image:loc>
+      <image:title>Purple Premium Soft Silk Saree D03</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p163.jpg</image:loc>
+      <image:title>Gold Premium Soft Silk Saree D09</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p164.jpg</image:loc>
+      <image:title>Gold Premium Soft Silk Saree D10</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p165.jpg</image:loc>
+      <image:title>Gold Premium Soft Silk Saree D11</image:title>
+      <image:caption>Premium Soft Silk Sarees — Rs.1650</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p166.jpg</image:loc>
+      <image:title>Pink Mysore Crepe Saree D01</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p167.jpg</image:loc>
+      <image:title>Gold Mysore Crepe Saree D01</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p168.jpg</image:loc>
+      <image:title>Green Mysore Crepe Saree D01</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p169.jpg</image:loc>
+      <image:title>Purple Mysore Crepe Saree D01</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p170.jpg</image:loc>
+      <image:title>Green Mysore Crepe Saree D02</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p171.jpg</image:loc>
+      <image:title>Maroon Mysore Crepe Saree D01</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p172.jpg</image:loc>
+      <image:title>Pink Mysore Crepe Saree D02</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p173.jpg</image:loc>
+      <image:title>Maroon Mysore Crepe Saree D02</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p174.jpg</image:loc>
+      <image:title>Green Mysore Crepe Saree D03</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p175.jpg</image:loc>
+      <image:title>Green Mysore Crepe Saree D04</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p176.jpg</image:loc>
+      <image:title>Gold Mysore Crepe Saree D02</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p177.jpg</image:loc>
+      <image:title>Purple Mysore Crepe Saree D02</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p178.jpg</image:loc>
+      <image:title>Maroon Mysore Crepe Saree D03</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p179.jpg</image:loc>
+      <image:title>Maroon Mysore Crepe Saree D04</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p180.jpg</image:loc>
+      <image:title>Maroon Mysore Crepe Saree D05</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p181.jpg</image:loc>
+      <image:title>Maroon Mysore Crepe Saree D06</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p182.jpg</image:loc>
+      <image:title>Maroon Mysore Crepe Saree D07</image:title>
+      <image:caption>Mysore Crepe Sarees — Rs.1399</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p183.jpg</image:loc>
+      <image:title>Gold Semi Mysore Crape Saree D01</image:title>
+      <image:caption>Semi Mysore Crape Sarees — Rs.970</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p184.jpg</image:loc>
+      <image:title>Gold Semi Mysore Crape Saree D02</image:title>
+      <image:caption>Semi Mysore Crape Sarees — Rs.970</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p185.jpg</image:loc>
+      <image:title>Maroon Semi Mysore Crape Saree D01</image:title>
+      <image:caption>Semi Mysore Crape Sarees — Rs.970</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p186.jpg</image:loc>
+      <image:title>Maroon Semi Mysore Crape Saree D02</image:title>
+      <image:caption>Semi Mysore Crape Sarees — Rs.970</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p187.jpg</image:loc>
+      <image:title>Purple Semi Mysore Crape Saree D01</image:title>
+      <image:caption>Semi Mysore Crape Sarees — Rs.970</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p188.jpg</image:loc>
+      <image:title>Green Semi Mysore Crape Saree D01</image:title>
+      <image:caption>Semi Mysore Crape Sarees — Rs.970</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p189.jpg</image:loc>
+      <image:title>Pink Semi Mysore Crape Saree D01</image:title>
+      <image:caption>Semi Mysore Crape Sarees — Rs.970</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p190.jpg</image:loc>
+      <image:title>Teal Semi Mysore Crape Saree D01</image:title>
+      <image:caption>Semi Mysore Crape Sarees — Rs.970</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p191.jpg</image:loc>
+      <image:title>Maroon Semi Mysore Crape Saree D03</image:title>
+      <image:caption>Semi Mysore Crape Sarees — Rs.970</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mjweaves.com/assets/products/p192.jpg</image:loc>
+      <image:title>Green Semi Mysore Crape Saree D02</image:title>
+      <image:caption>Semi Mysore Crape Sarees — Rs.970</image:caption>
+    </image:image>
   </url>
 </urlset>
