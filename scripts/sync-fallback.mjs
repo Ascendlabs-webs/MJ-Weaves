@@ -58,16 +58,41 @@ const itemList = {
   name: 'MJ Weaves Collection',
   numberOfItems: products.length,
   itemListElement: products.map((p, i) => {
+    const freeShip = String(p.shipping || '').toLowerCase().indexOf('free') !== -1;
+    const offers = {
+      '@type': 'Offer',
+      price: String(p.price),
+      priceCurrency: 'INR',
+      availability: 'https://schema.org/' + (p.soldOut ? 'SoldOut' : 'InStock'),
+      itemCondition: 'https://schema.org/NewCondition',
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        applicableCountry: 'IN',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+        merchantReturnDays: 2,
+        returnMethod: 'https://schema.org/ReturnByMail',
+      },
+      shippingDetails: {
+        '@type': 'OfferShippingDetails',
+        shippingDestination: {'@type': 'DefinedRegion', addressCountry: 'IN'},
+        deliveryTime: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: {'@type': 'QuantitativeValue', minValue: 0, maxValue: 3, unitCode: 'DAY'},
+          transitTime: {'@type': 'QuantitativeValue', minValue: 2, maxValue: 5, unitCode: 'DAY'},
+        },
+      },
+    };
+    // Exact rate only where shipping is free; other pieces confirm freight on WhatsApp.
+    if (freeShip) {
+      offers.shippingDetails.shippingRate = {'@type': 'MonetaryAmount', value: '0', currency: 'INR'};
+    }
     const item = {
       '@type': 'Product',
       name: p.title,
       image: [SITE + '/' + p.img],
-      offers: {
-        '@type': 'Offer',
-        price: String(p.price),
-        priceCurrency: 'INR',
-        availability: 'https://schema.org/' + (p.soldOut ? 'SoldOut' : 'InStock'),
-      },
+      brand: {'@type': 'Brand', name: 'MJ Weaves'},
+      mpn: String(p.id).toUpperCase(),
+      offers,
     };
     if (p.category) item.category = p.category;
     if (p.desc) item.description = p.desc;
