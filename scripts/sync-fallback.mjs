@@ -7,7 +7,8 @@
  *   3. <noscript> product list in index.html (crawlable catalog text)
  *   4. sitemap.xml (homepage + per-product image entries for image search)
  */
-import {readFileSync, writeFileSync} from 'node:fs';
+import {readFileSync, writeFileSync, existsSync} from 'node:fs';
+import {createHash} from 'node:crypto';
 import {join, dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 
@@ -126,13 +127,31 @@ page = page.replace(nosRe, (m, a) => a + '    ' + nos + '\n    <!-- PRODUCTS-NOS
 writeFileSync(join(ROOT, 'index.html'), page);
 console.log('seo: ItemList JSON-LD (' + products.length + ' items) + noscript catalog written');
 
-const today = new Date().toISOString().slice(0, 10);
+// lastmod must only move when the catalog actually changes — a date that
+// advances on every run makes Google distrust <lastmod> and skip the sitemap.
+const hash = createHash('sha256').update(JSON.stringify(products)).digest('hex');
+const stampFile = join(ROOT, '.catalog-stamp.json');
+let lastmod = new Date().toISOString().slice(0, 10);
+let prevStamp = null;
+if (existsSync(stampFile)) {
+  try {
+    prevStamp = JSON.parse(readFileSync(stampFile, 'utf8').replace(/^\uFEFF/, ''));
+  } catch {
+    prevStamp = null; // corrupt stamp — fall back to today
+  }
+}
+if (prevStamp && prevStamp.hash === hash && /^\d{4}-\d{2}-\d{2}$/.test(prevStamp.lastmod || '')) {
+  lastmod = prevStamp.lastmod;
+} else {
+  writeFileSync(stampFile, JSON.stringify({hash, lastmod}, null, 2) + '\n');
+}
+
 const sm =
   '<?xml version="1.0" encoding="UTF-8"?>\n' +
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' +
   '  <url>\n' +
   '    <loc>' + SITE + '/</loc>\n' +
-  '    <lastmod>' + today + '</lastmod>\n' +
+  '    <lastmod>' + lastmod + '</lastmod>\n' +
   '    <changefreq>weekly</changefreq>\n' +
   '    <priority>1.0</priority>\n' +
   products
