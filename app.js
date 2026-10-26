@@ -118,6 +118,8 @@ const IMG_DIMS={
   // ⚠️ Replace with your real Instagram handle
   const INSTAGRAM_URL = "https://instagram.com/";
   const SHOP_NAME = "MJ Weaves";
+  // Absolute site origin used for photo links inside WhatsApp messages.
+  const SITE = "https://mjweaves.com";
 
 // ---------------- PRODUCT DATA ----------------
   // Products are served from products.json (editable via admin.html).
@@ -390,10 +392,22 @@ const IMG_DIMS={
   }
 
   // ---------------- WHATSAPP LINKS ----------------
-  function waLink(product){
-    const base = product
-      ? `Hi! I'm interested in the ${product.title} (Ref: ${product.id.toUpperCase()}) from ${SHOP_NAME}. Is it still in stock?`
-      : `Hi! I'd like to know more about your Kanchipuram soft silk sarees at ${SHOP_NAME}.`;
+  function waLink(product, options = {}){
+    const { notify = false, includePhoto = true } = options;
+
+    let base;
+    if (!product) {
+      base = `Hi! I'd like to know more about your Kanchipuram soft silk sarees at ${SHOP_NAME}.`;
+    } else if (notify) {
+      base = `Please notify me when the ${product.title} (Ref: ${product.id.toUpperCase()}) becomes available again.`;
+    } else {
+      base = `Hi! I'm interested in the ${product.title} (Ref: ${product.id.toUpperCase()}) from ${SHOP_NAME}. Is it still in stock?`;
+    }
+
+    if (includePhoto && product) {
+      base += `\nPhoto: ${SITE}/${product.img.replace(/^\//, "")}`;
+    }
+
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(base)}`;
   }
 
@@ -566,7 +580,7 @@ const IMG_DIMS={
     if(p.soldOut){
       qvWaBtn.style.display = "none";
       qvNotifyBtn.style.display = "inline-flex";
-      qvNotifyBtn.href = waLink(p).replace("Is it still in stock?", "Please notify me when the " + p.title + " (Ref: " + p.id.toUpperCase() + ") becomes available again.");
+      qvNotifyBtn.href = waLink(p, { notify: true });
     } else {
       qvWaBtn.style.display = "inline-flex";
       qvNotifyBtn.style.display = "none";
