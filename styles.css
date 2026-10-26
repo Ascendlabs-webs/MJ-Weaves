@@ -202,7 +202,7 @@
   .hero{
     position:relative;
     display:grid;
-    grid-template-columns: 1.02fr 0.98fr;
+    grid-template-columns: 1fr 1fr;
     align-items:stretch;
     min-height: 640px;
     overflow:hidden;
