@@ -484,7 +484,21 @@ const IMG_DIMS={
     if(activeCategory!=="All") list = list.filter(p=>(p.category||"")===activeCategory);
     const q = searchInput.value.trim().toLowerCase();
     if(q){
-      list = list.filter(p=> p.title.toLowerCase().includes(q) || p.color.toLowerCase().includes(q) || (p.category||"").toLowerCase().includes(q));
+      const qCompact = q.replace(/[^a-z0-9]/g, "");
+      const idOf = p=> String(p.id || "").toLowerCase();
+      const compactIdOf = p=> idOf(p).replace(/[^a-z0-9]/g, "");
+      const exactHits = PRODUCTS.filter(p=> idOf(p)===q || (qCompact && compactIdOf(p)===qCompact));
+      const partialHits = PRODUCTS.filter(p=>{
+        if(exactHits.indexOf(p)!==-1) return false;
+        return idOf(p).includes(q) || (qCompact && compactIdOf(p).includes(qCompact));
+      });
+      const textHits = list.filter(p=>{
+        if(exactHits.indexOf(p)!==-1 || partialHits.indexOf(p)!==-1) return false;
+        return String(p.title||"").toLowerCase().includes(q)
+          || String(p.color||"").toLowerCase().includes(q)
+          || String(p.category||"").toLowerCase().includes(q);
+      });
+      list = exactHits.concat(textHits, partialHits);
     }
     const sortVal = sortSelect.value;
     if(sortVal==="price-asc") list.sort((a,b)=>a.price-b.price);
