@@ -532,9 +532,10 @@
     letter-spacing:0.02em;
     font-family:'Jost', sans-serif;
     color:var(--ink);
+    min-height:2.95em;
   }
   .card-meta{
-    display:flex; align-items:center; justify-content:space-between;
+    display:flex; align-items:flex-start; justify-content:space-between;
     font-size:12.5px; color:#7a6a5c;
   }
   .card-price{
@@ -582,7 +583,7 @@
     align-items:center;
   }
   .story-media{ position:relative; cursor:zoom-in; }
-  .story-media img{ width:100%; aspect-ratio:4/5; object-fit:cover; }
+  .story-media img{ width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; }
   .story-media .frame{
     position:absolute; inset:16px;
     border:1px solid var(--gold-bright);

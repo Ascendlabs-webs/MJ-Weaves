@@ -782,6 +782,7 @@ const IMG_DIMS={
     buildLightboxList();
     renderInsta();
     renderFilters();
+    renderCatFilters();
     renderGrid();
   }
 
