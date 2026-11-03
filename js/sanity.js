@@ -16,6 +16,7 @@
   var PROJECT_ID = "xyo6yn81";
   var DATASET = "production";
   var API_VERSION = "v2025-01-01";
+  var LOCAL_IMAGE_OVERRIDES = { p01: "assets/products/p01-flatlay.webp", p05: "assets/products/p05-flatlay.webp" };
 
   function isConfigured() {
     return !!PROJECT_ID && PROJECT_ID !== "SANITY_PROJECT_ID";
@@ -36,11 +37,12 @@
   // Sanity product doc -> the exact shape the grid/quick-view code expects.
   function mapProduct(doc) {
     var photoRef = doc.photoRef || (doc.photo && doc.photo.asset && doc.photo.asset._ref) || "";
+    var codeKey = String(doc.code || "").toLowerCase();
     return {
       id: doc.code,
-      img: photoRef
+      img: LOCAL_IMAGE_OVERRIDES[codeKey] || (photoRef
         ? sanityImageUrl(photoRef, 800)
-        : (doc.photoUrl || doc.legacyImg || ""),
+        : (doc.photoUrl || doc.legacyImg || "")),
       title: doc.name,
       color: doc.shade,
       hex: doc.shadeHex || "#B8892B",

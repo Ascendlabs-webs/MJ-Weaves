@@ -1,9 +1,9 @@
 const IMG_DIMS={
-"assets/products/p01.webp":[900,900],
+"assets/products/p01-flatlay.webp":[896,1200],
 "assets/products/p02.webp":[900,900],
 "assets/products/p03.webp":[900,900],
 "assets/products/p04.webp":[900,900],
-"assets/products/p05.webp":[900,900],
+"assets/products/p05-flatlay.webp":[896,1200],
 "assets/products/p06.webp":[900,900],
 "assets/products/p07.webp":[815,900],
 "assets/products/p08.webp":[900,900],
@@ -125,11 +125,11 @@ const IMG_DIMS={
   // Products are served from products.json (editable via admin.html).
   // The array below is only a fallback if the JSON can't be fetched.
   const FALLBACK_PRODUCTS = [
-    { id:"p01", img:"assets/products/p01.webp", title:"Emerald Teal Kanjivaram", color:"Teal", hex:"#116A5C", price:850, desc:"A deep emerald body with copper zari buttas and a blush pink contrast pallu — a quiet, regal drape for day functions.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost" },
+    { id:"p01", img:"assets/products/p01-flatlay.webp", title:"Emerald Teal Kanjivaram", color:"Teal", hex:"#116A5C", price:850, desc:"A deep emerald body with copper zari buttas and a blush pink contrast pallu — a quiet, regal drape for day functions.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost" },
     { id:"p02", img:"assets/products/p02.webp", title:"Rani Pink Kanjivaram", color:"Pink", hex:"#C21E6D", price:850, desc:"A classic rani pink with a heavier grand pallu — celebratory without being loud, made for poojas and sangeet evenings.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost", soldOut:true },
     { id:"p03", img:"assets/products/p03.webp", title:"Royal Violet Kanjivaram", color:"Purple", hex:"#4A1F5E", price:850, desc:"Royal violet silk with copper zari that catches light as you move. One of the most requested shades this season.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost" },
     { id:"p04", img:"assets/products/p04.webp", title:"Peacock Blue Kanjivaram", color:"Blue", hex:"#1B4F8C", price:850, desc:"Peacock blue with a contrasting gold-edged pallu. A full-day weave — temple in the morning, reception by evening.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost" },
-    { id:"p05", img:"assets/products/p05.webp", title:"Deep Amethyst Kanjivaram", color:"Purple", hex:"#4A1F5E", price:850, desc:"Deep amethyst folded over itself — flatlay perfection. Copper zari border detail that stays crisp in photos.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost" },
+    { id:"p05", img:"assets/products/p05-flatlay.webp", title:"Deep Amethyst Kanjivaram", color:"Purple", hex:"#4A1F5E", price:850, desc:"Deep amethyst folded over itself — flatlay perfection. Copper zari border detail that stays crisp in photos.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost" },
     { id:"p06", img:"assets/products/p06.webp", title:"Sky Blue Kanjivaram", color:"Blue", hex:"#1B4F8C", price:850, desc:"Sky blue lightness in soft silk, with a zari pallu that gives it enough weight to fall beautifully.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost" },
     { id:"p07", img:"assets/products/p07.webp", title:"Meadow Green Kanjivaram", color:"Green", hex:"#2F7A4F", price:850, desc:"Meadow green with copper buttas — a fresh shade that photographs rich under temple and hall lighting alike.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost" },
     { id:"p08", img:"assets/products/p08.webp", title:"Bottle Green Kanjivaram", color:"Green", hex:"#2F7A4F", price:850, desc:"Bottle green depth with a contrast zari pallu. Understated at first glance, unmistakable up close.", category:"Soft Silk Sarees", kind:"saree", shipping:"+ shipping cost" },
@@ -654,8 +654,8 @@ const IMG_DIMS={
 
   function buildLightboxList(){
     lbList = [];
-    lbList.push({src:"assets/products/p01.jpg", cap:"Emerald Teal Kanjivaram — the hero drape of this drop."});
-    lbList.push({src:"assets/products/p05.jpg", cap:"Deep Amethyst Kanjivaram — copper zari border detail."});
+    lbList.push({src:"assets/products/p01-hero.jpg", cap:"Emerald Teal Kanjivaram — the hero drape of this drop."});
+    lbList.push({src:"assets/products/p05-flatlay.webp", cap:"Deep Amethyst Kanjivaram — copper zari border detail."});
     lbList.push(...PRODUCTS.map(p=>({src:p.img, cap:`${p.title} — ${p.color} soft silk with zari.`})));
   }
   buildLightboxList();

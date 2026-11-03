@@ -1,7 +1,7 @@
 [
   {
     "id": "p01",
-    "img": "assets/products/p01.webp",
+    "img": "assets/products/p01-flatlay.webp",
     "title": "Emerald Teal Kanjivaram",
     "color": "Teal",
     "hex": "#116A5C",
@@ -50,7 +50,7 @@
   },
   {
     "id": "p05",
-    "img": "assets/products/p05.webp",
+    "img": "assets/products/p05-flatlay.webp",
     "title": "Deep Amethyst Kanjivaram",
     "color": "Purple",
     "hex": "#4A1F5E",
