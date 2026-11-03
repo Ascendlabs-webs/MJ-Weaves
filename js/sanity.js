@@ -16,7 +16,7 @@
   var PROJECT_ID = "xyo6yn81";
   var DATASET = "production";
   var API_VERSION = "v2025-01-01";
-  var LOCAL_IMAGE_OVERRIDES = { p01: "assets/products/p01-flatlay.webp", p05: "assets/products/p05-flatlay.webp" };
+  var LOCAL_IMAGE_OVERRIDES = { p01: "assets/products/p01-flatlay.webp", p03: "assets/products/p03-flatlay.webp", p05: "assets/products/p05-flatlay.webp" };
 
   function isConfigured() {
     return !!PROJECT_ID && PROJECT_ID !== "SANITY_PROJECT_ID";
