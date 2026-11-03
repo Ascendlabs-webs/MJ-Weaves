@@ -397,7 +397,7 @@ const IMG_DIMS={
 
     let base;
     if (!product) {
-      base = `Hi! I'd like to know more about your Kanchipuram soft silk sarees at ${SHOP_NAME}.`;
+      base = `Hi! I'd like to know more about your collection at ${SHOP_NAME}.`;
     } else if (notify) {
       base = `Please notify me when the ${product.title} (Ref: ${product.id.toUpperCase()}) becomes available again.`;
     } else {
