@@ -386,7 +386,8 @@ const IMG_DIMS={
   let PRODUCTS = FALLBACK_PRODUCTS;
   function refreshStats(){
     const totalStock = PRODUCTS.filter(p=>!p.soldOut).length;
-    document.getElementById("heroStockCount").textContent = totalStock;
+    const stockEl = document.getElementById("heroStockCount");
+    if (stockEl) stockEl.textContent = totalStock;
     document.getElementById("statStock").textContent = totalStock;
     document.getElementById("collectionCount").textContent = PRODUCTS.length;
   }

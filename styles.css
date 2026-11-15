@@ -596,6 +596,9 @@
   .story-list{ list-style:none; padding:0; margin:26px 0 0; display:flex; flex-direction:column; gap:14px;}
   .story-list li{ display:flex; gap:14px; align-items:flex-start; font-size:15px; color:#3a2e26;}
   .story-list svg{ width:18px; height:18px; flex:none; margin-top:2px; color:var(--rose);}
+  .hero-checks{ list-style:none; padding:0; margin:26px 0 0; display:flex; flex-direction:column; gap:14px;}
+  .hero-checks li{ display:flex; gap:14px; align-items:flex-start; font-size:15px; color:#3a2e26;}
+  .hero-checks svg{ width:18px; height:18px; flex:none; margin-top:2px; color:var(--rose);}
   @media (max-width:900px){
     .story{ grid-template-columns:1fr; gap:36px; }
   }
